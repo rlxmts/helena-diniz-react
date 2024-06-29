@@ -15,4 +15,14 @@ export const Botao = styled.button`
     width: 100%;
     max-width: 250px;
     text-align: center;
+    cursor: pointer;
+    transition: .7s;
+    border: 1px solid transparent;
+    margin: 1rem 0;
+
+    &:hover{
+    background-color: #FFF;
+    color:#42707e;
+    border: 1px solid #42707e;
+    }
 `

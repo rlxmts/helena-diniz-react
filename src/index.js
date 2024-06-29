@@ -39,6 +39,8 @@ const EstiloGlobal = createGlobalStyle`
   color: #000;
   text-decoration: none;
   font-size: 16px;
+  font-family: "Playfair Display";
+  font-weight: 300;
 }
 `
 

@@ -6,6 +6,8 @@ const LogoBox = styled.a`
     display:block;
     position: relative;
     cursor: pointer;
+    max-width: 300px;
+
     &::before{
         content: '';
         display: block;
@@ -27,23 +29,24 @@ const LogoBox = styled.a`
 
         line-height: 1.3rem;
     }
-    span{
-        display: block;
+`
+
+const Span = styled.span`
+    display: block;
         font-family: "Quicksand";
         font-weight: 500;
         color: #42707e;
-        font-size:1rem;
-        letter-spacing: 2px;
+        font-size: .8rem;
+        margin: 3px;
+        letter-spacing: 4px;
         text-transform: uppercase;
-    }
 `
 
 const Logo = ()=> {
     return(
-        <LogoBox class="link-logo">
-                <h1 class="logo">Helena Diniz
-                    <span>Hipnoterapia</span>
-                </h1>
+        <LogoBox className="link-logo">
+                <h1 className="logo">Helena Diniz</h1>
+                <Span>Hipnoterapeuta</Span>
         </LogoBox>
     )
 }
