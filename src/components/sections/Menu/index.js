@@ -35,17 +35,43 @@ const Nav = styled.nav`
     }
 `
 
+const paginas = [
+    {
+        nome: 'Home',
+        link: '/'
+    },
+    {
+        nome: 'Sobre',
+        link: '/'
+    },
+    {
+        nome: 'Hipnoterapia',
+        link: '/'
+    },
+    {
+        nome: 'Especialidades',
+        link: '/'
+    },
+    {
+        nome: 'Contato',
+        link: '/'
+    }
+];
+
+
 const Menu = ()=> {
     return(
         <Nav className="cabecalho__nav">
             <ul className="lista">
-                <li className="lista__item"><a href="https://wa.me/5521991527608">Home</a></li>
-                <li className="lista__item"><a href="https://wa.me/5521991527608">Helena Diniz</a></li>
-                <li className="lista__item"><a href="https://wa.me/5521991527608">Hipnoterapia</a></li>
-                <li className="lista__item"><a href="https://wa.me/5521991527608">Especialidades</a></li>
-                <li className="lista__item"><a href="https://wa.me/5521991527608">Depoimentos</a></li>
-                <li className="lista__item"><a href="https://wa.me/5521991527608">Parceiros</a></li>
-                <li className="lista__item"><a href="https://wa.me/5521991527608">Contato</a></li>
+                {paginas.map( (item) => {
+                    return(
+                        <li className="lista__item" key={item.nome}>
+                            <a href={item.link}>
+                            {item.nome}
+                            </a>
+                        </li>
+                    )
+                })}
             </ul>
             <button>Atendimento</button>
         </Nav>

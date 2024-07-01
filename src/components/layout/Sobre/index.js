@@ -23,10 +23,10 @@ const SecaoSobre = styled.section`
         }
 
         h2{
-            max-width: 500px;
             text-align: end;
             font-size: 3rem;
             font-weight: 300;
+            align-self: flex-start;
         }
 
         p, h2, li{
@@ -48,7 +48,7 @@ const Sobre = ()=> {
         <SecaoSobre>
             <Container>
                 <div className="sobre-container">
-                    <Titulo>Olá! Seja bem-vindo, eu sou Helena Diniz.</Titulo>
+                    <Titulo>Olá! <br></br>Seja bem-vindo,<br></br>eu sou Helena Diniz.</Titulo>
                     <div>
                         <Paragrafo>Atuo como Terapeuta Antroposófica, Transpessoal, Aconselhadora Biográfica, e Instrutora de Mindfulness. Realizo atendimentos individuais ou em grupos, cursos diversos e vivências que contribuem com o desenvolvimento humano, o autoconhecimento e qualidade de vida. Minha proposta de trabalho é ajudar você a:</Paragrafo>
 
