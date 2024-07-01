@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Container } from "../../common/Container";
 import Depoimentos from "../../common/Depoimentos";
+import { useRef } from "react";
 
 const SecaoTestemunhos = styled.section`
     background-color: #7d916a;
@@ -17,7 +18,7 @@ const SecaoTestemunhos = styled.section`
     .slide{
         width:100%;
         display:flex;
-        gap: 2rem;
+        transition: 1s;
     }
 
     .slide::-webkit-scrollbar{
@@ -75,10 +76,35 @@ const Testemunhos = () => {
         }
     ]
 
+    const carrossel = useRef('null');
+
+    // const iniciarSlider = ()=>{
+    //     carrossel.current.scroll
+    // }
+    
+    const passarProximoSlide = (e)=> {
+        e.preventDefault();
+        const larguraDisplay = window.innerWidth;
+        const elementoCarrossel = carrossel.current;
+        elementoCarrossel.style.transform += `translateX(-${larguraDisplay}px)`;
+    }
+    
+    const passarAnteriorSlide = (e)=> {
+        e.preventDefault();
+        const larguraDisplay = window.innerWidth;
+        const elementoCarrossel = carrossel.current;
+        const posicaoElemento = elementoCarrossel.getBoundingClientRect().left; 
+        const numero = larguraDisplay + posicaoElemento;
+
+       
+            elementoCarrossel.style.transform = `translateX(${numero}px)`;
+       
+    }
+
     return(
         <SecaoTestemunhos>
             <Container className="testemunhos-container">
-                <div className="slide">
+                <div className="slide" ref={carrossel}>
                     {depoimentos.map( (item)=> {
                         return(
                             <Depoimentos nome={item.nome} depoimento={item.depoimento} key={item.nome}/>
@@ -86,8 +112,8 @@ const Testemunhos = () => {
                     })}
                 </div>
 
-                <button className="button-prox"><img src="./img/seta.svg" alt="Ver proximo depoimento"  /></button>
-                <button className="button-ante"><img src="./img/seta.svg" alt="Ver depoimento anterior" /></button>
+                <button className="button-prox" onClick={passarProximoSlide}><img src="./img/seta.svg" alt="Ver proximo depoimento"  /></button>
+                <button className="button-ante" onClick={passarAnteriorSlide}><img src="./img/seta.svg" alt="Ver depoimento anterior" /></button>
             </Container>
         </SecaoTestemunhos>
     )
