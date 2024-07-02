@@ -13,12 +13,14 @@ const SecaoTestemunhos = styled.section`
         flex-direction: column;
         align-items: center;
         padding: 10rem 0;
+        max-width: 100%;
     }
     
     .slide{
         width:100%;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
         display:flex;
-        transition: 1s;
     }
 
     .slide::-webkit-scrollbar{
@@ -31,8 +33,8 @@ const SecaoTestemunhos = styled.section`
         transform: translateY(-50%);
         color: transparent;
         border:none;
-        width: 20px;
-        height:20px;
+        width: 30px;
+        height:30px;
         border-radius: 50%;
         background-color: transparent;
         text-align:center;
@@ -77,29 +79,22 @@ const Testemunhos = () => {
     ]
 
     const carrossel = useRef('null');
-
-    // const iniciarSlider = ()=>{
-    //     carrossel.current.scroll
-    // }
     
     const passarProximoSlide = (e)=> {
         e.preventDefault();
-        const larguraDisplay = window.innerWidth;
-        const elementoCarrossel = carrossel.current;
-        elementoCarrossel.style.transform += `translateX(-${larguraDisplay}px)`;
+        passaScroll();
     }
     
     const passarAnteriorSlide = (e)=> {
         e.preventDefault();
-        const larguraDisplay = window.innerWidth;
-        const elementoCarrossel = carrossel.current;
-        const posicaoElemento = elementoCarrossel.getBoundingClientRect().left; 
-        const numero = larguraDisplay + posicaoElemento;
-
-       
-            elementoCarrossel.style.transform = `translateX(${numero}px)`;
-       
+        carrossel.current.scrollLeft -= carrossel.current.offsetWidth;
     }
+
+    const passaScroll = ()=> {
+        carrossel.current.scrollLeft += carrossel.current.offsetWidth;
+    }
+
+    // setInterval(passaScroll, 2000);
 
     return(
         <SecaoTestemunhos>
