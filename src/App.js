@@ -5,6 +5,7 @@ import Sobre from "./components/layout/Sobre";
 import Testemunhos from "./components/sections/Testemunhos";
 import Motivos from "./components/sections/Motivos";
 import Citacao from "./components/sections/Citacao";
+import Contato from "./components/layout/Contato";
 
 function App() {
   return (
@@ -13,9 +14,10 @@ function App() {
       <Banner />
       <Sobre />
       <Hipnoterapia />
-      <Citacao />
       <Motivos />
       <Testemunhos />
+      <Citacao />
+      <Contato />
     </div>
   );
 }
