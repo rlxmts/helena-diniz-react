@@ -22,6 +22,7 @@ function App() {
 
   
   const cabecalho = useRef(null);
+  const menu = useRef(null);
   const [addClasse, setAddClasse] = useState('');
   
   window.addEventListener('scroll', ()=> {
@@ -34,8 +35,8 @@ function App() {
   })
 
   const [posicaoEl, setPosicaoEl] = useState('0');
-    
-  const abrirOuFecharMenu = (menu)=> {
+
+  const abrirOuFecharMenu = ()=> {
         if(posicaoEl === '0'){
             setPosicaoEl('-20vw')
         }else{
@@ -50,6 +51,7 @@ function App() {
         referencia={cabecalho} 
         classe={addClasse} 
         aoClicar={abrirOuFecharMenu} 
+        menu={menu}
       />
       <Banner />
       <Sobre />

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import Logo from "../../common/Logo";
 import Menu from "../../sections/Menu";
-import { useRef, useState } from "react";
 
 const CabecalhoSite = styled.header`
     padding: 2rem ;
@@ -63,10 +62,7 @@ const CabecalhoSite = styled.header`
     }
 `
 
-const Cabecalho = ({referencia, classe, aoClicar})=> {
-
-    const menu = useRef(null);
-
+const Cabecalho = ({referencia, classe, aoClicar, menu})=> {
     return(
         <CabecalhoSite className={classe} ref={referencia}>
                 <Logo />        
