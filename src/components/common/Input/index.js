@@ -3,10 +3,10 @@ import styled from "styled-components";
 const CampoInput = styled.input`
     border:none;
     background-color: #FFF;
-    padding: 1rem;
+    padding: .5rem;
     outline: none;
     margin: .5rem 0 1rem 0;
-    box-shadow: 0px 0px 5px #0000005e;
+    box-shadow: 0px 0px 5px #00000014;
 `
 
 const Input = ({placeholder, nome, obrigatorio, tipo})=> {
