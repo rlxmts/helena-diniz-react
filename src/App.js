@@ -20,19 +20,33 @@ const ContainerApp = styled.div`
 
 function App() {
 
+  const debounce = function(func, wait, immediate) {
+    let timeout;
+    return function(...args) {
+      const context = this;
+      const later = function () {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+      const callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
+    };
+  };
   
   const cabecalho = useRef(null);
   const menu = useRef(null);
   const [addClasse, setAddClasse] = useState('');
   
-  window.addEventListener('scroll', ()=> {
+  window.addEventListener('scroll', debounce( ()=> {
     
       if(window.scrollY > 0){
         setAddClasse('cabecalho-ativo');
       }else{
         setAddClasse('');
       };
-  })
+  }), 200);
 
   const [posicaoEl, setPosicaoEl] = useState('0');
 
