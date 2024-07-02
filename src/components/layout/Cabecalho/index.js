@@ -26,6 +26,28 @@ const CabecalhoSite = styled.header`
         cursor:pointer;
         position: relative;
         z-index: 999;
+        
+        &::before{
+            transition: 1s;
+            content: '';
+            display:block;
+            width: 20px;
+            height: 2px;
+            background-color: #000;
+            position: absolute;
+            top: 8px;
+        }
+        
+        &::after{
+            transition: 1s;
+            content: '';
+            display:block;
+            width: 20px;
+            height: 2px;
+            background-color: #000;
+            position: absolute;
+            bottom: 8px;
+        }
     }
     
     .barrinhas{
@@ -34,26 +56,8 @@ const CabecalhoSite = styled.header`
         height: 2px;
         width: 20px;
         position: relative;
-
-        &::before{
-            content: '';
-            display:block;
-            width: 20px;
-            height: 2px;
-            background-color: #000;
-            position: absolute;
-            top: 5px;
-        }
+        transition: 1s;
         
-        &::after{
-            content: '';
-            display:block;
-            width: 20px;
-            height: 2px;
-            background-color: #000;
-            position: absolute;
-            bottom: 5px;
-        }
     }
 
     .barrinha-ativa{
@@ -62,12 +66,12 @@ const CabecalhoSite = styled.header`
     }
 `
 
-const Cabecalho = ({referencia, classe, aoClicar, menu, refBarrinha})=> {
+const Cabecalho = ({referencia, classe, aoClicar, menu, classes, classesBotao})=> {
     return(
         <CabecalhoSite className={classe} ref={referencia}>
                 <Logo />        
-                <div className="container-barrinhas" onClick={aoClicar}>
-                    <span className='barrinhas' ref={refBarrinha}/>
+                <div className={classesBotao} onClick={aoClicar}>
+                    <span className={classes}/>
                 </div>
                 <Menu referencia={menu} />
         </CabecalhoSite>
