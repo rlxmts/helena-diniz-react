@@ -12,6 +12,12 @@ const CabecalhoSite = styled.header`
     width: 100%;
     top: 0;
     z-index: 9999;
+    transition: .5s;
+
+    .cabecalho-ativo{
+        background-color: #FFF;
+        box-shadow: 0px 0px 10px #00000015; 
+    }
 
     .container-barrinhas{
         width: 30px;
@@ -57,24 +63,14 @@ const CabecalhoSite = styled.header`
     }
 `
 
-const Cabecalho = ()=> {
+const Cabecalho = ({referencia, classe, aoClicar})=> {
 
     const menu = useRef(null);
-    const [posicaoEl, setPosicaoEl] = useState('0');
-
-    const abrirMenu = ()=> {
-        if(posicaoEl === '0'){
-            setPosicaoEl('-20vw')
-        }else{
-            setPosicaoEl('0')
-        }
-        menu.current.style.right = `${posicaoEl}`;
-    }
 
     return(
-        <CabecalhoSite className="cabecalho">
+        <CabecalhoSite className={classe} ref={referencia}>
                 <Logo />        
-                <div className="container-barrinhas" onClick={abrirMenu}>
+                <div className="container-barrinhas" onClick={aoClicar}>
                     <span className='barrinhas' />
                 </div>
                 <Menu referencia={menu} />
