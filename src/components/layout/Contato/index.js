@@ -6,10 +6,18 @@ import Formulario from "../../common/Formulario";
 
 const SecaoContato = styled.section`
     background-color: #F1F1F1;
+    box-shadow: 0px 0px 10px #0000004f;
+    position: relative;
+    .contato-titulo{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
 
     .container-contato{
         display:flex;
         gap: 2rem;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 `
 
@@ -17,6 +25,7 @@ const Informacoes = styled.div`
     display: flex;
     flex-direction: column;
     gap:1rem;
+    width:45%;
 
     .redes-sociais{
         display: flex;
@@ -94,7 +103,7 @@ const Contato = ()=> {
     return(
         <SecaoContato>
             <Container>
-                    <Titulo>Contato</Titulo>
+                    <Titulo className="contato-titulo">Contato</Titulo>
                     <div className="container-contato">
                         <ContainerForm>
                             <Paragrafo>

@@ -3,7 +3,7 @@ import { Container } from "../../common/Container"
 import { Paragrafo } from "../../common/Paragrafo";
 import { Titulo } from "../../common/Titulo";
 import { Botao } from "../../common/Botao";
-import Historia from "../../sections/Historia";
+import Historia from "../Historia";
 
 const SecaoSobre = styled.section`
 
