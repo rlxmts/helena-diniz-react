@@ -8,59 +8,69 @@ import Citacao from "./components/sections/Citacao";
 import Contato from "./components/layout/Contato";
 import Rodape from "./components/layout/Rodape";
 import styled from "styled-components";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 
 const ContainerApp = styled.div`
+    position:relative;
+    transition: 1s;
+
   .cabecalho-ativo{
         background-color: #FFF;
         box-shadow: 0px 0px 10px #00000015; 
     }
 `
 
-function App() {
-
-  const debounce = function(func, wait, immediate) {
-    let timeout;
-    return function(...args) {
-      const context = this;
-      const later = function () {
-        timeout = null;
-        if (!immediate) func.apply(context, args);
-      };
-      const callNow = immediate && !timeout;
-      clearTimeout(timeout);
-      timeout = setTimeout(later, wait);
-      if (callNow) func.apply(context, args);
-    };
-  };
+function App() { 
   
   const cabecalho = useRef(null);
+  const moverApp = useRef(null);
   const menu = useRef(null);
+
   const [addClasse, setAddClasse] = useState('');
-  
-  window.addEventListener('scroll', debounce( ()=> {
-    
+  const [mover, setMover] = useState('0');
+  const [abrirMenu, setAbrirMenu] = useState('-20vw')
+
+  useEffect( ()=> {
+
+    const ativarMenu = ()=> {
       if(window.scrollY > 0){
         setAddClasse('cabecalho-ativo');
       }else{
         setAddClasse('');
       };
-  }), 200);
+    }
 
-  const [posicaoEl, setPosicaoEl] = useState('0');
+    window.addEventListener('scroll', ativarMenu);
 
+    return () => {
+      window.removeEventListener('scroll', ativarMenu);
+    };
+
+  }, [])
+  
   const abrirOuFecharMenu = ()=> {
-        if(posicaoEl === '0'){
-            setPosicaoEl('-20vw')
+        if(mover === '0'){
+          setMover('-20vw');
+          setAbrirMenu('0');
         }else{
-            setPosicaoEl('0')
+          setMover('0');
+          setAbrirMenu('-20vw');
         }
-        menu.current.style.right = `${posicaoEl}`;
-  }
+
+      }
+      
+   useEffect( ()=>{
+
+    moverApp.current.style.left = mover;
+    menu.current.style.right = abrirMenu;
+
+  }, [mover, abrirMenu]);
+
+
 
   return (
-    <ContainerApp className="App">
+    <ContainerApp ref={moverApp}>
       <Cabecalho 
         referencia={cabecalho} 
         classe={addClasse} 
