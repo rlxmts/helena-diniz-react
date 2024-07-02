@@ -62,12 +62,12 @@ const CabecalhoSite = styled.header`
     }
 `
 
-const Cabecalho = ({referencia, classe, aoClicar, menu})=> {
+const Cabecalho = ({referencia, classe, aoClicar, menu, refBarrinha})=> {
     return(
         <CabecalhoSite className={classe} ref={referencia}>
                 <Logo />        
                 <div className="container-barrinhas" onClick={aoClicar}>
-                    <span className='barrinhas' />
+                    <span className='barrinhas' ref={refBarrinha}/>
                 </div>
                 <Menu referencia={menu} />
         </CabecalhoSite>

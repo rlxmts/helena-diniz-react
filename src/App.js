@@ -26,23 +26,19 @@ function App() {
   const cabecalho = useRef(null);
   const moverApp = useRef(null);
   const menu = useRef(null);
+  const barrinhas = useRef(null);
 
   const [addClasse, setAddClasse] = useState('');
   const [mover, setMover] = useState('0');
-  const [abrirMenu, setAbrirMenu] = useState('-20vw')
+  const [abrirMenu, setAbrirMenu] = useState('-20vw');
 
   useEffect( ()=> {
 
     const ativarMenu = ()=> {
-      if(window.scrollY > 0){
-        setAddClasse('cabecalho-ativo');
-      }else{
-        setAddClasse('');
-      };
+      window.scrollY > 0 ? setAddClasse('cabecalho-ativo') : setAddClasse('');
     }
-
     window.addEventListener('scroll', ativarMenu);
-
+    
     return () => {
       window.removeEventListener('scroll', ativarMenu);
     };
@@ -50,18 +46,17 @@ function App() {
   }, [])
   
   const abrirOuFecharMenu = ()=> {
-        if(mover === '0'){
-          setMover('-20vw');
-          setAbrirMenu('0');
-        }else{
-          setMover('0');
-          setAbrirMenu('-20vw');
-        }
-
-      }
+    if(mover === '0'){
+      setMover('-20vw');
+      setAbrirMenu('0');
+    }else{
+      setMover('0');
+      setAbrirMenu('-20vw');
+    }
+  }
       
    useEffect( ()=>{
-
+    
     moverApp.current.style.left = mover;
     menu.current.style.right = abrirMenu;
 
@@ -76,6 +71,7 @@ function App() {
         classe={addClasse} 
         aoClicar={abrirOuFecharMenu} 
         menu={menu}
+        refBarrinha={barrinhas}
       />
       <Banner />
       <Sobre />
