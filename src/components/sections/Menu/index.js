@@ -11,6 +11,8 @@ const Nav = styled.nav`
     justify-content: center;
     align-items: center;
     box-shadow: 0px 0px 2px #0006;
+    background-color: #FFF;
+    transition: 1s;
 
     ul{
         width: 100%;
@@ -59,13 +61,13 @@ const paginas = [
 ];
 
 
-const Menu = ()=> {
+const Menu = ({referencia})=> {
     return(
-        <Nav className="cabecalho__nav">
+        <Nav ref={referencia}>
             <ul className="lista">
                 {paginas.map( (item) => {
                     return(
-                        <li className="lista__item" key={item.nome}>
+                        <li key={item.nome}>
                             <a href={item.link}>
                             {item.nome}
                             </a>
