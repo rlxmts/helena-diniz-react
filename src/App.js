@@ -37,6 +37,27 @@ const ContainerApp = styled.div`
     transform: rotate(-45deg);
     bottom:14px;
   }
+
+  .botao-wpp{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    display:flex;
+    font-size: 1px;
+    animation: pular 5s infinite;
+
+    img{
+      width:100%;
+    }
+  } 
+
+  @keyframes pular {
+    0%{ transform: translateY(0)}
+    50%{ transform: translateY(5px)}
+    100%{ transform: translateY(0)}
+  }
 `
 
 function App() { 
@@ -96,6 +117,15 @@ function App() {
       <Citacao />
       <Contato />
       <Rodape />
+      <a 
+        className="botao-wpp"
+        href="https://wa.me/351931662209"
+        rel="noreferrer noopener"
+        target="_blank"
+      >
+        <img src="./img/bt-wpp.png" alt="whatsapp"></img>
+        whatsapp
+      </a>
     </ContainerApp>
   );
 }
