@@ -49,6 +49,7 @@ const Section = styled.section`
 
       .fundo{
         padding: 2rem 2rem 4rem 2rem;
+        background-image: url('./img/helena.jpeg');
         background-position-x: center;
         background-position-y: top;
         justify-content: end;
