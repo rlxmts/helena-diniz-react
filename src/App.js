@@ -10,6 +10,7 @@ import Rodape from "./components/layout/Rodape";
 import styled from "styled-components";
 import { useEffect, useRef, useState } from "react";
 import classNames from "classnames";
+import CaixaWpp from "./components/common/caixaWpp";
  
 const ContainerApp = styled.div`
     overflow: hidden;
@@ -118,6 +119,7 @@ function App() {
       <Citacao />
       <Contato />
       <Rodape />
+      <CaixaWpp />
       <a 
         className="botao-wpp"
         href="https://wa.me/351931662209"
