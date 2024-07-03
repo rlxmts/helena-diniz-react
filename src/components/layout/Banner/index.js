@@ -42,10 +42,13 @@ const Section = styled.section`
 
     @media screen and (max-width: 668px){
 
+        height: 80vh;
+
       .fundo{
-        padding: 1rem;
+        padding: 2rem 2rem 4rem 2rem;
         background-position-x: center;
         background-position-y: top;
+        justify-content: end;
       }
 
       .fundo::after{
@@ -55,7 +58,7 @@ const Section = styled.section`
         display:block;
         position: absolute;
         background: rgb(255,255,255);
-        background: linear-gradient(0deg, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 100%);
+        background: linear-gradient(0deg, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 60%);
         left:0;
         top:0;
       }
@@ -64,7 +67,10 @@ const Section = styled.section`
         font-size: 1.8rem;
         line-height: 2rem;
       }
-    
+
+      h2{
+        margin: 1rem 0;
+      }
     }
       
 `
