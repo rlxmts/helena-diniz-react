@@ -12,6 +12,7 @@ import { useEffect, useRef, useState } from "react";
 import classNames from "classnames";
  
 const ContainerApp = styled.div`
+    overflow: hidden;
     position:relative;
     transition: 1s;
     left: 0;
