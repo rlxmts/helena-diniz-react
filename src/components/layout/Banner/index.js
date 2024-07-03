@@ -46,8 +46,7 @@ const Section = styled.section`
         padding: 1rem;
         background-position-x: center;
         background-position-y: top;
-        justify-content: end;
-        padding-bottom: 4rem;
+        // justify-content: end;
       }
 
       .fundo::after{
