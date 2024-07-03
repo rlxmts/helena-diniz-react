@@ -46,7 +46,6 @@ const Section = styled.section`
         padding: 1rem;
         background-position-x: center;
         background-position-y: top;
-        // justify-content: end;
       }
 
       .fundo::after{

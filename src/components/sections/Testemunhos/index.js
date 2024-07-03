@@ -108,8 +108,6 @@ const Testemunhos = () => {
         carrossel.current.scrollLeft += carrossel.current.offsetWidth;
     }
 
-    // setInterval(passaScroll, 2000);
-
     return(
         <SecaoTestemunhos>
             <Container className="testemunhos-container">

@@ -26,7 +26,7 @@ const CardDepoimentos = styled.div`
 
     @media screen and (max-width: 668px){
 
-        padding:0;
+        padding:1rem;
 
         q{
             font-size: 1.2rem !important;
