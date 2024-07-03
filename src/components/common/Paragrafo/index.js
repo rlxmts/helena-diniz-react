@@ -6,4 +6,5 @@ export const Paragrafo = styled.p`
     font-size: 1rem;
     line-height: 1.5rem;
     margin-bottom: 1rem;
+    text-align: start;
 `

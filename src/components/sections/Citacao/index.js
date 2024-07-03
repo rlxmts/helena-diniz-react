@@ -1,5 +1,8 @@
 import styled from "styled-components";
 import { Container } from "../../common/Container";
+import Aos from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const ContainerCitacao = styled.section`
     background-color: #eceff1;
@@ -50,11 +53,19 @@ const Frase = styled.q`
 `
 
 const Citacao = ()=> {
+
+    useEffect( ()=>{
+        Aos.init({
+            duration:1000,
+            once: true
+        })
+    },[])
+
     return(
         <ContainerCitacao>
             <Container className="citacao-container">
-                <Frase>Não posso esperar que algo mude lá fora na vida social se eu mesmo não me puser em movimento.</Frase>
-                <span className="autor">- Rudolf Steiner, fundador da Antroposofia</span>
+                <Frase  data-aos="fade-up">Não posso esperar que algo mude lá fora na vida social se eu mesmo não me puser em movimento.</Frase>
+                <span className="autor" data-aos="fade-up">- Rudolf Steiner, fundador da Antroposofia</span>
             </Container>
         </ContainerCitacao>
     )

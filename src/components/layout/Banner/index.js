@@ -1,6 +1,9 @@
 import styled from "styled-components";
 import { Botao } from "../../common/Botao";
 import { Container } from "../../common/Container";
+import Aos from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const Section = styled.section`
 
@@ -92,14 +95,22 @@ const Div = styled.div`
 `
 
 const Banner = ()=> {
+
+    useEffect( ()=>{
+        Aos.init({
+            duration:1000,
+            once: true
+        })
+    },[])
+
     return(
         <Section>
             <Container className="fundo">
-                    <h1>Autoconhecimento e Autodesenvolvimento</h1>
-                    <h2>Terapia Antroposófica, Transpessoal e Mindfulness</h2>
+                    <h1 data-aos="fade-up">Autoconhecimento e Autodesenvolvimento</h1>
+                    <h2 data-aos="fade-up">Terapia Antroposófica, Transpessoal e Mindfulness</h2>
                     <Div>
-                        <Botao href="https://">Agende seu Atendimento</Botao>
-                        <span>Presencial ou Online.</span>
+                        <Botao data-aos="fade-up" href="https://">Agende seu Atendimento</Botao>
+                        <span data-aos="fade-up">Presencial ou Online.</span>
                     </Div>
             </Container>
         </Section>

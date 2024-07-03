@@ -1,6 +1,9 @@
 import styled from "styled-components";
 import { Paragrafo } from "../Paragrafo";
 import { Subtitulo } from "../Subtitulo";
+import Aos from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const CardContainer = styled.div`
     background-color: #FFF;
@@ -45,8 +48,16 @@ const CabecalhoCard = styled.div`
 `
 
 const Card = ({img, alt, titulo, subtitulo, texto}) => {
+
+    useEffect( ()=>{
+        Aos.init({
+            duration:1000,
+            once: true
+        })
+    },[])
+
     return(
-        <CardContainer>
+        <CardContainer  data-aos="fade-up">
             <CabecalhoCard>
                <img src={img} alt={alt}></img>
                 <div>

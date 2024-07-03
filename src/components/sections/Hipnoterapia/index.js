@@ -1,10 +1,13 @@
-import styled from "styled-components"
-import { Container } from "../../common/Container"
-import { Titulo } from "../../common/Titulo"
-import { Subtitulo } from "../../common/Subtitulo"
-import Card from "../../common/Card"
-import { Paragrafo } from "../../common/Paragrafo"
-import { Botao } from "../../common/Botao"
+import styled from "styled-components";
+import { Container } from "../../common/Container";
+import { Titulo } from "../../common/Titulo";
+import { Subtitulo } from "../../common/Subtitulo";
+import Card from "../../common/Card";
+import { Paragrafo } from "../../common/Paragrafo";
+import { Botao } from "../../common/Botao";
+import Aos from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const Section = styled.section`
 
@@ -16,6 +19,7 @@ const Section = styled.section`
     }
 
     .hipnoterapia-container{
+    text-align: center;
         padding: 10rem 1.5rem;
         display: flex;
         flex-direction: column;
@@ -85,12 +89,20 @@ const Chamada = styled.div`
 `
 
 const Hipnoterapia = () => {
+
+    useEffect( ()=>{
+        Aos.init({
+            duration:1000,
+            once: true
+        })
+    },[])
+
     return(
         <Section>
             <Container className="hipnoterapia-container">
-                <Titulo>Hipnoterapia</Titulo>
-                <span className="barrinha-titulo"></span>
-                <Subtitulo className="subtitulo">
+                <Titulo data-aos="fade-up">Hipnoterapia</Titulo>
+                <span data-aos="fade-up" className="barrinha-titulo"></span>
+                <Subtitulo data-aos="fade-up" className="subtitulo">
                     Estas são as ferramentas e linhas com que trabalho, de acordo com o perfil e os propósitos de cada pessoa.
                 </Subtitulo>
                 <CardsContainer>
@@ -131,9 +143,9 @@ const Hipnoterapia = () => {
                     />
                 </CardsContainer>
                 <Chamada>
-                    <Subtitulo>Sessões semanais on-line ou presenciais com 1 hora de duração.</Subtitulo>
-                    <Paragrafo>Veja como você pode melhorar sua qualidade de vida e suas relações pessoais e profissionais.</Paragrafo>
-                    <Botao>Agende Seu Atendimento</Botao>
+                    <Subtitulo data-aos="fade-up">Sessões semanais on-line ou presenciais com 1 hora de duração.</Subtitulo>
+                    <Paragrafo data-aos="fade-up">Veja como você pode melhorar sua qualidade de vida e suas relações pessoais e profissionais.</Paragrafo>
+                    <Botao data-aos="fade-up">Agende Seu Atendimento</Botao>
                 </Chamada>
             </Container>
         </Section>

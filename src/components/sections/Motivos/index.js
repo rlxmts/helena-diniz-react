@@ -2,6 +2,9 @@ import styled from "styled-components"
 import { Subtitulo } from "../../common/Subtitulo";
 import { Paragrafo } from "../../common/Paragrafo";
 import { Container } from "../../common/Container";
+import Aos from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const SecaoMotivo = styled.section`
 
@@ -9,6 +12,7 @@ const SecaoMotivo = styled.section`
         display: flex;
         flex-direction: column;
         align-items:center;
+        text-align: center;
     }
 
     h3{
@@ -62,20 +66,27 @@ const SecaoMotivo = styled.section`
 
 
 const Motivos = ()=> {
+
+    useEffect( ()=>{
+        Aos.init({
+            duration:1000,
+            once: true
+        })
+    },[])
    
     const problemas = ['Vícios', 'Ansiedade', 'Depressão', 'Compulsões', 'Ciclo Repetitivos', 'Fobias'];
     
     return(
         <SecaoMotivo>
             <Container className="motivos-container">
-                <Subtitulo>Para Quem É Essa Terapia?</Subtitulo>
-                <h4>A Terapia Breve Com Base Em Neurociência</h4>
-                <Paragrafo>É indicada quando já não há uma razão ou lógica aparente para a permanência do sofrimento. E neste momento você está diante de uma oportunidade de passar por uma terapia de caráter corretivo para queixas e sofrimentos específicos, principalmente quando já se tentou resolver de todas as maneiras usando a razão, tentando estratégias comportamentais, treinamentos cognitivos, que não funcionam. Quem sofre tem pressa!                
+                <Subtitulo data-aos="fade-up">Para Quem É Essa Terapia?</Subtitulo>
+                <h4 data-aos="fade-up">A Terapia Breve Com Base Em Neurociência</h4>
+                <Paragrafo data-aos="fade-up">É indicada quando já não há uma razão ou lógica aparente para a permanência do sofrimento. E neste momento você está diante de uma oportunidade de passar por uma terapia de caráter corretivo para queixas e sofrimentos específicos, principalmente quando já se tentou resolver de todas as maneiras usando a razão, tentando estratégias comportamentais, treinamentos cognitivos, que não funcionam. Quem sofre tem pressa!                
                 </Paragrafo>
                 <ul>
                     {problemas.map( (item)=> {
                         return(
-                            <li key={item}>{item}</li>
+                            <li data-aos="fade-right" key={item}>{item}</li>
                         )
                     })}
                 </ul>

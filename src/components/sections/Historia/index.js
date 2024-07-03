@@ -2,6 +2,11 @@ import styled from "styled-components";
 import { Container } from "../../common/Container";
 import { Paragrafo } from "../../common/Paragrafo";
 import { Subtitulo } from "../../common/Subtitulo";
+import Aos from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+
+
 
 const DivHistoria = styled.div`
      background-color: #dbdddd;
@@ -67,16 +72,24 @@ const DivHistoria = styled.div`
 `
 
 const Historia = () => {
+
+    useEffect( ()=>{
+        Aos.init({
+            duration:1000,
+            once: true
+        })
+    },[])
+
     return(
         <DivHistoria>
             <Container className="historia-container">
-                <div className="historia-textos">
+                <div className="historia-textos" data-aos="fade-right">
                     <Subtitulo>Dedico minha vida a ajudar as pessoas a se sentirem melhor e a crescerem pessoalmente.</Subtitulo>
                     <Paragrafo>Comecei minha carreira bem jovem, em São Paulo, e assim tive a oportunidade de vivenciar diferentes realidades no apoio e orientação a pessoas e profissionais.</Paragrafo>
                     <Paragrafo>Transitei por hospitais, institutos e Ongs, atuei no mercado corporativo como gestora e diretora social em multinacionais como a Volkswagen Caminhões, e tive a minha própria consultoria organizacional, focada no desenvolvimento humano de líderes e gestores.</Paragrafo>
                     <Paragrafo>Sempre me mantendo atualizada, realizei especializações em Psicologia Analítica, Psicologia Transpessoal, Desenvolvimento Humano, Estudos Biográficos, Pedagogia Curativa, balizados pela Antroposofia; e também, Gerontologia e Constelação Familiar. No conhecimento sobre gestores e executivos, me capacitei em Executive Coach, Life Coach e Coach Quântico (ICI: Integrated Coaching Institute) e Desenvolvimento de Líderes e Gestores (FGV).</Paragrafo>
                 </div>
-                <div className="historia-img">
+                <div className="historia-img" data-aos="fade-left">
                     <Subtitulo className="titulo-mobile">Dedico minha vida a ajudar as pessoas a se sentirem melhor e a crescerem pessoalmente.</Subtitulo>
                     <img src="./img/medica-corpo.webp" alt="Doutora Helena Diniz terapeuta clinica"></img>
                 </div>

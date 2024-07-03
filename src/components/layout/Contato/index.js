@@ -3,6 +3,9 @@ import { Container } from "../../common/Container";
 import { Titulo } from "../../common/Titulo";
 import { Paragrafo } from "../../common/Paragrafo";
 import Formulario from "../../common/Formulario";
+import Aos from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const SecaoContato = styled.section`
     background-color: #F1F1F1;
@@ -136,6 +139,14 @@ const ContainerForm = styled.div`
 `
 
 const Contato = ()=> {
+
+    useEffect( ()=>{
+        Aos.init({
+            duration:1000,
+            once: true
+        })
+    },[])
+
     return(
         <SecaoContato>
             <Container>
@@ -143,14 +154,14 @@ const Contato = ()=> {
                         <Titulo className="contato-titulo">Contato</Titulo>
                     </div>
                     <div className="container-contato">
-                        <ContainerForm>
+                        <ContainerForm data-aos="fade-right">
                             <Paragrafo>
                             Estou de portas e braços abertos para contribuir com o seu desenvolvimento e transformação por meio da terapia transpessoal, antroposófica e do processo biográfico. Agende sua sessão clicando nos botões espalhados pelo site ou, se preferir, utilize os campos abaixo ou o telefone.
                             </Paragrafo>
                             <Formulario />
                         </ContainerForm>
                         <Informacoes>
-                            <ul className="info-contato">
+                            <ul className="info-contato"  data-aos="fade-left">
                                 <li>Rua Jaboticabeiras, 156 - Santissímo / RJ
                                     <span>(21) 99153-7608</span>
                                 </li>
@@ -160,7 +171,7 @@ const Contato = ()=> {
                                     <p>Sábados das 8h às 12h.</p>
                                 </li>
                             </ul>
-                            <ul className="redes-sociais">
+                            <ul className="redes-sociais" data-aos="fade-left">
                                 <li>
                                     <a href="https://" target="_blank" rel="noopener noreferrer">WhatsApp</a>
                                 </li>
