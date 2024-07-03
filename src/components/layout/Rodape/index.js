@@ -17,7 +17,7 @@ const SecaoRodape = styled.footer`
         }
 
         .creditos-logo{
-            width: 70px;
+            width: 60px;
         }
     }
 `
