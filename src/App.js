@@ -14,6 +14,7 @@ import classNames from "classnames";
 const ContainerApp = styled.div`
     position:relative;
     transition: 1s;
+    left: 0;
 
   .cabecalho-ativo{
         background-color: #FFF;
@@ -40,12 +41,11 @@ const ContainerApp = styled.div`
 function App() { 
   
   const cabecalho = useRef(null);
-  const moverApp = useRef(null);
   const menu = useRef(null);
+  const AppContainer = useRef(null);
 
   const [addClasse, setAddClasse] = useState('');
-  const [mover, setMover] = useState('0');
-  const [abrirMenu, setAbrirMenu] = useState('-20vw');
+  const [classeApp, setClasseApp] = useState('');
   const [classBarrinha, setClassBarrinha] = useState('');
   const [barrinhas, setBarrinhas] = useState('');
 
@@ -63,26 +63,22 @@ function App() {
   }, [])
   
   const abrirOuFecharMenu = ()=> {
-    if(mover === '0'){
-      setMover('-20vw');
-      setAbrirMenu('0');
+    if(!AppContainer.current.classList.contains('app-recolhido')){
+      setClasseApp('app-recolhido');
       setClassBarrinha('barrinha-ativo');
-      setBarrinhas('barrinhas-ativo')
+      setBarrinhas('barrinhas-ativo');
+      menu.current.classList.add('movimentar');
     }else{
-      setMover('0');
-      setAbrirMenu('-20vw');
+      menu.current.classList.remove('movimentar');
+      setClasseApp('');
       setClassBarrinha('');
       setBarrinhas('');
     }
   }
       
-   useEffect( ()=>{
-    moverApp.current.style.left = mover;
-    menu.current.style.right = abrirMenu;
-  }, [mover, abrirMenu]);
 
   return (
-    <ContainerApp ref={moverApp}>
+    <ContainerApp className={classNames(classeApp)} ref={AppContainer} >
       <Cabecalho 
         referencia={cabecalho} 
         classe={addClasse} 

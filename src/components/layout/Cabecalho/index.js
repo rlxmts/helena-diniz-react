@@ -13,6 +13,10 @@ const CabecalhoSite = styled.header`
     z-index: 9999;
     transition: .5s;
 
+    @media screen and (max-width: 768px){
+        padding: 2rem 1rem 2rem 2rem;
+    }
+
     .cabecalho-ativo{
         background-color: #FFF;
         box-shadow: 0px 0px 10px #00000015; 
@@ -61,7 +65,6 @@ const CabecalhoSite = styled.header`
     }
 
     .barrinha-ativa{
-
         display:none;
     }
 `

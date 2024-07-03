@@ -35,6 +35,11 @@ const Nav = styled.nav`
         border: 1px solid #000;
         cursor:pointer;
     }
+
+    @media screen and (max-width: 768px){
+        width: 80vw;
+        right: -80vw ;
+    }   
 `
 
 const paginas = [

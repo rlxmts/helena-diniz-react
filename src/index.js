@@ -6,6 +6,19 @@ import { createGlobalStyle } from 'styled-components';
 
 const EstiloGlobal = createGlobalStyle`
 
+.app-recolhido{
+    position:relative;
+    left: -20vw;
+
+    @media screen and (max-width: 768px){
+      left: -80vw !important;
+    }
+}
+
+.movimentar{
+  right:0;
+}
+
 @font-face {
     font-family: "Poppins";
     src: url("./fonts/Poppins/Poppins-SemiBold.ttf") format('truetype');
