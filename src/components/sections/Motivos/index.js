@@ -44,6 +44,20 @@ const SecaoMotivo = styled.section`
         text-align: center;
         border-radius: 20px;
     }
+
+    @media screen and (max-width: 668px){
+        h4{
+            font-size: 2rem;
+            margin-top:1rem;
+        }
+
+        ul{
+            gap:5px;
+        }
+        li{
+            width: 160px;
+        }
+    }
 `
 
 

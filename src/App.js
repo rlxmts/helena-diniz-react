@@ -10,8 +10,7 @@ import Rodape from "./components/layout/Rodape";
 import styled from "styled-components";
 import { useEffect, useRef, useState } from "react";
 import classNames from "classnames";
-
-
+ 
 const ContainerApp = styled.div`
     position:relative;
     transition: 1s;
@@ -19,7 +18,7 @@ const ContainerApp = styled.div`
   .cabecalho-ativo{
         background-color: #FFF;
         box-shadow: 0px 0px 10px #00000015; 
-        padding: 1rem;
+        padding: 1rem 2rem;
     }
 
   .barrinha-ativo{
@@ -78,13 +77,9 @@ function App() {
   }
       
    useEffect( ()=>{
-
     moverApp.current.style.left = mover;
     menu.current.style.right = abrirMenu;
-
   }, [mover, abrirMenu]);
-
-
 
   return (
     <ContainerApp ref={moverApp}>

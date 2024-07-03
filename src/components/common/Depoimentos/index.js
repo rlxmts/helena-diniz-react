@@ -23,6 +23,15 @@ const CardDepoimentos = styled.div`
     p:before{
         content: '- ';
     }
+
+    @media screen and (max-width: 668px){
+
+        padding:0;
+
+        q{
+            font-size: 1.2rem !important;
+        }
+    }
 `
 
 const Depoimentos = ({nome , depoimento})=> {

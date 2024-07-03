@@ -18,13 +18,16 @@ const CardContainer = styled.div`
     h5{
         color: #999999;
     }
+
+    @media screen and (max-width: 668px){
+        padding: 2rem;
+    }
 `
 
 const CabecalhoCard = styled.div`
     display: flex;
     align-items: center;
     gap: 2rem;
-    padding:0;
     margin: 0;
     padding: 2rem 0 3rem 0;
     border-bottom: 1px solid #DCDCDC;
@@ -32,6 +35,12 @@ const CabecalhoCard = styled.div`
 
     h3{
         margin-bottom: 0;
+    }
+
+    @media screen and (max-width: 668px){
+        flex-direction: column;
+        padding: 0 0 1rem 0;
+        gap:1rem;
     }
 `
 

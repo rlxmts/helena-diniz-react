@@ -6,6 +6,10 @@ import { Subtitulo } from "../../common/Subtitulo";
 const DivHistoria = styled.div`
      background-color: #dbdddd;
 
+     .titulo-mobile{
+        display:none;
+     }
+
      .historia-container{
         display: flex;
         aling-items: center;
@@ -22,10 +26,42 @@ const DivHistoria = styled.div`
 
         .historia-img{
             max-width:230px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
             img{
                 width:100%;
             }
+        }
+     }
+
+     @media screen and (max-width: 768px){
+        .historia-container{
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        .historia-img{
+            max-width:100% !important;
+
+            img{
+                max-width:200px;
+            }
+        }
+
+        .historia-textos{
+
+            margin-top: 2rem;
+
+            h3{
+                display:none;
+            }
+        }
+
+        .titulo-mobile{
+            display:block;
+            width: 100%;
         }
      }
 `
@@ -41,8 +77,9 @@ const Historia = () => {
                     <Paragrafo>Sempre me mantendo atualizada, realizei especializações em Psicologia Analítica, Psicologia Transpessoal, Desenvolvimento Humano, Estudos Biográficos, Pedagogia Curativa, balizados pela Antroposofia; e também, Gerontologia e Constelação Familiar. No conhecimento sobre gestores e executivos, me capacitei em Executive Coach, Life Coach e Coach Quântico (ICI: Integrated Coaching Institute) e Desenvolvimento de Líderes e Gestores (FGV).</Paragrafo>
                 </div>
                 <div className="historia-img">
+                    <Subtitulo className="titulo-mobile">Dedico minha vida a ajudar as pessoas a se sentirem melhor e a crescerem pessoalmente.</Subtitulo>
                     <img src="./img/medica-corpo.webp" alt="Doutora Helena Diniz terapeuta clinica"></img>
-                    </div>
+                </div>
             </Container>
         </DivHistoria>
     )

@@ -14,6 +14,7 @@ const SecaoTestemunhos = styled.section`
         align-items: center;
         padding: 10rem 0;
         max-width: 100%;
+        position: relative;
     }
     
     .slide{
@@ -52,7 +53,20 @@ const SecaoTestemunhos = styled.section`
         
     .button-ante{
         left: 20px;
-        transform: rotate(180deg);
+        transform: translateY(-50%) rotate(180deg);
+    }
+
+    @media screen and (max-width: 668px){
+        .testemunhos-container{
+            padding: 5rem 0;
+        }
+
+        .button-prox{
+            right: -5px;
+        }
+        .button-ante{
+           left: -5px;
+        }
     }
 `
 

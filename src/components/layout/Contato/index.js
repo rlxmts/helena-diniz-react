@@ -8,6 +8,7 @@ const SecaoContato = styled.section`
     background-color: #F1F1F1;
     box-shadow: 0px 0px 10px #0000004f;
     position: relative;
+
     .contato-titulo{
         font-size: 1.5rem;
         margin-bottom: 1rem;
@@ -18,6 +19,22 @@ const SecaoContato = styled.section`
         gap: 2rem;
         flex-wrap: wrap;
         justify-content: space-between;
+    }
+
+
+    @media screen and (max-width:768px){
+        
+        .container-contato{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container-titulo{
+            width:100%;
+            max-width:500px;
+            margin: 0 auto;
+        }
+
     }
 `
 
@@ -66,7 +83,7 @@ const Informacoes = styled.div`
             background-image: url('./img/email.png');
             height: 20px;
             width: 20px;
-        }
+        }   
     }
 
     .info-contato{
@@ -93,17 +110,38 @@ const Informacoes = styled.div`
             margin-bottom: 1rem;
         }
     }
+
+    @media screen and (max-width: 768px){
+        width:100%;
+        max-width:500px;
+        margin:0 auto;
+
+        .info-contato{
+            li, h5{
+                font-size: 1.3rem !important;
+            }
+        }
+    }
 `
 
 const ContainerForm = styled.div`
     width: 50%;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    } 
+
 `
 
 const Contato = ()=> {
     return(
         <SecaoContato>
             <Container>
-                    <Titulo className="contato-titulo">Contato</Titulo>
+                    <div className="container-titulo">
+                        <Titulo className="contato-titulo">Contato</Titulo>
+                    </div>
                     <div className="container-contato">
                         <ContainerForm>
                             <Paragrafo>

@@ -18,7 +18,7 @@ export const Botao = styled.button`
     cursor: pointer;
     transition: .7s;
     border: 1px solid transparent;
-    margin: 1rem 0;
+    margin: 1rem auto;
 
     &:hover{
     background-color: #FFF;

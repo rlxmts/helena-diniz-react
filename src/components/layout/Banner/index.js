@@ -23,6 +23,8 @@ const Section = styled.section`
         padding: 0 10%;
     }
 
+    h1,h2{position:realtive; z-index:1;}
+
     h1{
         font-size: 3rem;
         font-weight: 300;
@@ -30,18 +32,50 @@ const Section = styled.section`
         color: #42707e;
         line-height: 3rem;
     }
-        h2{
-            color: #7d7e7f;
-            margin: 2rem 0;
-            font-size: 1.2rem;
-            font-weight: 300;
-        }
+    
+    h2{
+        color: #7d7e7f;
+        margin: 2rem 0;
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+
+    @media screen and (max-width: 668px){
+
+      .fundo{
+        padding: 1rem;
+        background-position-x: center;
+        background-position-y: top;
+        justify-content: end;
+        padding-bottom: 4rem;
+      }
+
+      .fundo::after{
+        width:100%;
+        height:100%;
+        content: '';
+        display:block;
+        position: absolute;
+        background: rgb(255,255,255);
+        background: linear-gradient(0deg, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 100%);
+        left:0;
+        top:0;
+      }
+
+      h1{
+        font-size: 1.8rem;
+        line-height: 2rem;
+      }
+    
+    }
+      
 `
 
 const Div = styled.div`
 
     width: fit-content;
-
+    position:relative;
+    z-index: 1;
     span{   
         display: block;
         width: 100%;

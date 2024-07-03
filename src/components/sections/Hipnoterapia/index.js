@@ -37,6 +37,16 @@ const Section = styled.section`
         background-color: #FFF;
         margin-top: .5rem;
     }
+
+    @media screen and (max-width: 668px){
+        .hipnoterapia-container{
+            padding: 5rem 1.5rem;
+        }
+
+        .subtitulo{
+            margin: 1rem 0 2rem 0;
+        }
+    }
 `
 
 const CardsContainer = styled.div`
@@ -66,6 +76,10 @@ const Chamada = styled.div`
         color: #FFF;
         text-align: center;
         max-width: 100%;
+    }
+
+    @media screen and (max-width: 668px){
+        margin-top: 5rem;
     }
 
 `

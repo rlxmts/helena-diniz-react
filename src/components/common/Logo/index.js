@@ -29,23 +29,44 @@ const LogoBox = styled.a`
 
         line-height: 1.3rem;
     }
+
+    @media screen and (max-width: 668px){
+
+        padding-left:2rem;
+        
+        &::before{
+        
+            top:50%;
+            width:30px;
+            height:30px;
+        }
+
+        h1{
+            font-size:1.5rem;
+        }
+    }
 `
 
 const Span = styled.span`
     display: block;
-        font-family: "Quicksand";
-        font-weight: 500;
-        color: #42707e;
-        font-size: .8rem;
-        margin: 3px;
-        letter-spacing: 4px;
-        text-transform: uppercase;
+    font-family: "Quicksand";
+    font-weight: 500;
+    color: #42707e;
+    font-size: .8rem;
+    margin: 3px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+
+    @media screen and (max-width: 668px){
+        font-size: .6rem;
+    }
 `
 
 const Logo = ()=> {
     return(
-        <LogoBox className="link-logo">
-                <h1 className="logo">Helena Diniz</h1>
+        <LogoBox>
+                <h1>Helena Diniz</h1>
                 <Span>Hipnoterapeuta</Span>
         </LogoBox>
     )

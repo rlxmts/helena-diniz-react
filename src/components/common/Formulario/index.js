@@ -6,6 +6,7 @@ import { Textarea } from "../Textarea";
 const SecaoFormulario = styled.form`
     display:flex;
     flex-direction: column;
+    width: 100%;
     max-width: 500px;
 `
 

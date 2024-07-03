@@ -42,6 +42,19 @@ const SecaoSobre = styled.section`
             margin-bottom: .5rem;
         }
     }
+
+    @media screen and (max-width: 768px){
+
+        .sobre-container{
+            flex-direction: column;
+        }
+
+        h2{
+            margin:0 auto;
+            text-align:start !important;
+            font-size: 2rem !important;
+        }
+    }
 `
 const Sobre = ()=> {
     return(
