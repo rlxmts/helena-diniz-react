@@ -5,6 +5,7 @@ import { Titulo } from "../../common/Titulo";
 import { Botao } from "../../common/Botao";
 import Historia from "../Historia";
 
+
 const SecaoSobre = styled.section`
 
     background: rgb(86,123,134);
@@ -57,6 +58,7 @@ const SecaoSobre = styled.section`
     }
 `
 const Sobre = ()=> {
+
     return(
         <SecaoSobre>
             <Container>
