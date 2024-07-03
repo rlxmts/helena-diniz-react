@@ -71,18 +71,18 @@ const Sobre = ()=> {
         <SecaoSobre>
             <Container>
                 <div className="sobre-container">
-                    <Titulo data-aos="fade-down">Olá! <br></br>Seja bem-vindo,<br></br>eu sou Helena Diniz.</Titulo>
+                    <Titulo data-aos="fade-up">Olá! <br></br>Seja bem-vindo,<br></br>eu sou Helena Diniz.</Titulo>
                     <div>
-                        <Paragrafo data-aos="fade-down">Atuo como Terapeuta Antroposófica, Transpessoal, Aconselhadora Biográfica, e Instrutora de Mindfulness. Realizo atendimentos individuais ou em grupos, cursos diversos e vivências que contribuem com o desenvolvimento humano, o autoconhecimento e qualidade de vida. Minha proposta de trabalho é ajudar você a:</Paragrafo>
+                        <Paragrafo data-aos="fade-up">Atuo como Terapeuta Antroposófica, Transpessoal, Aconselhadora Biográfica, e Instrutora de Mindfulness. Realizo atendimentos individuais ou em grupos, cursos diversos e vivências que contribuem com o desenvolvimento humano, o autoconhecimento e qualidade de vida. Minha proposta de trabalho é ajudar você a:</Paragrafo>
 
                         <ul>
-                            <li data-aos="fade-down">Ampliar a visão sobre si, seu momento e biografia.</li>
-                            <li data-aos="fade-down">Obter equilíbrio nas crises de relacionamento.</li>
-                            <li data-aos="fade-down">Desenvolver autoconfiança frente aos acontecimentos da época.</li>
-                            <li data-aos="fade-down">Reduzir o estresse e ansiedade do dia a dia.</li>
-                            <li data-aos="fade-down">Despertar qualidades e potencialidades no caminho profissional.</li>
+                            <li data-aos="fade-up">Ampliar a visão sobre si, seu momento e biografia.</li>
+                            <li data-aos="fade-up">Obter equilíbrio nas crises de relacionamento.</li>
+                            <li data-aos="fade-up">Desenvolver autoconfiança frente aos acontecimentos da época.</li>
+                            <li data-aos="fade-up">Reduzir o estresse e ansiedade do dia a dia.</li>
+                            <li data-aos="fade-up">Despertar qualidades e potencialidades no caminho profissional.</li>
                         </ul>
-                        <Botao  data-aos="fade-down"> Agende seu Atendimento</Botao>
+                        <Botao  data-aos="fade-up"> Agende seu Atendimento</Botao>
                     </div>
                 </div>
             </Container>
