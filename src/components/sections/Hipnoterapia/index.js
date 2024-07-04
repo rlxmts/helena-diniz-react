@@ -98,7 +98,7 @@ const Hipnoterapia = () => {
     },[])
 
     return(
-        <Section>
+        <Section id="hipnoterapia">
             <Container className="hipnoterapia-container">
                 <Titulo data-aos="fade-up">Hipnoterapia</Titulo>
                 <span data-aos="fade-up" className="barrinha-titulo"></span>

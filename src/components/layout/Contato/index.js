@@ -148,7 +148,7 @@ const Contato = ()=> {
     },[])
 
     return(
-        <SecaoContato>
+        <SecaoContato id="contato">
             <Container>
                     <div className="container-titulo">
                         <Titulo className="contato-titulo">Contato</Titulo>

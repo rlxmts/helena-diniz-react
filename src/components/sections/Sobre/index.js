@@ -68,7 +68,7 @@ const Sobre = ()=> {
         });
     }, [])
     return(
-        <SecaoSobre>
+        <SecaoSobre id="sobre">
             <Container>
                 <div className="sobre-container">
                     <Titulo data-aos="fade-up">Olá! <br></br>Seja bem-vindo,<br></br>eu sou Helena Diniz.</Titulo>

@@ -77,7 +77,7 @@ const Motivos = ()=> {
     const problemas = ['Vícios', 'Ansiedade', 'Depressão', 'Compulsões', 'Ciclo Repetitivos', 'Fobias'];
     
     return(
-        <SecaoMotivo>
+        <SecaoMotivo id="especialidades">
             <Container className="motivos-container">
                 <Subtitulo data-aos="fade-up">Para Quem É Essa Terapia?</Subtitulo>
                 <h4 data-aos="fade-up">A Terapia Breve Com Base Em Neurociência</h4>

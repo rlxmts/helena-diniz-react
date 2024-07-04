@@ -49,19 +49,19 @@ const paginas = [
     },
     {
         nome: 'Sobre',
-        link: '/'
+        link: '/#sobre'
     },
     {
         nome: 'Hipnoterapia',
-        link: '/'
+        link: '/#hipnoterapia'
     },
     {
         nome: 'Especialidades',
-        link: '/'
+        link: '/#especialidades'
     },
     {
         nome: 'Contato',
-        link: '/'
+        link: '/#contato'
     }
 ];
 
