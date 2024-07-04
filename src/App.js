@@ -68,7 +68,6 @@ function App() {
 
     const ativarBotaoSubir = ()=> {
       window.scrollY > 800 ?  setClasseBtSubir('ativa-bt-subir') : setClasseBtSubir('');
-      console.log(window.scrollY)
     }
 
     window.addEventListener('scroll', ()=> {

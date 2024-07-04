@@ -20,6 +20,11 @@ const Botao = styled.div`
     opacity: 0;
     cursor: pointer;
     z-index: 99;
+
+    @media screen and (max-width: 668px){
+        right: 10px;
+        bottom: 65px;
+    }
 `
 
 const BotaoSubir = ({referencia, classes})=>{
