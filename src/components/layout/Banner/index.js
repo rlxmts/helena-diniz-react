@@ -105,7 +105,7 @@ const Banner = ()=> {
     },[])
 
     return(
-        <Section>
+        <Section id="inicio">
             <Container className="fundo">
                     <h1 data-aos="fade-up">Autoconhecimento e Autodesenvolvimento</h1>
                     <h2 data-aos="fade-up">Terapia Antroposófica, Transpessoal e Mindfulness</h2>

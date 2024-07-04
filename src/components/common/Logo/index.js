@@ -64,8 +64,13 @@ const Span = styled.span`
 `
 
 const Logo = ()=> {
+
+    const subirAoTop = ()=> {
+        window.scrollTo(0, 0);
+    }
+
     return(
-        <LogoBox>
+        <LogoBox onClick={subirAoTop}>
                 <h1>Helena Diniz</h1>
                 <Span>Hipnoterapeuta</Span>
         </LogoBox>

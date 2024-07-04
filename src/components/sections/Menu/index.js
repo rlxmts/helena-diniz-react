@@ -45,7 +45,7 @@ const Nav = styled.nav`
 const paginas = [
     {
         nome: 'Home',
-        link: '/'
+        link: '/#inicio'
     },
     {
         nome: 'Sobre',
