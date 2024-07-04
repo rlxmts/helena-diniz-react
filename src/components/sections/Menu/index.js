@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Botao } from "../../common/Botao";
 
 const Nav = styled.nav`
     position: fixed;
@@ -28,11 +29,10 @@ const Nav = styled.nav`
         text-transform: uppercase;
     }
 
-    button{
+    .bt{
         margin-top: 1rem;
-        border-radius: 20px;
-        padding: .3rem .5rem;
-        border: 1px solid #000;
+        max-width:150px;
+        padding: .5rem;
         cursor:pointer;
     }
 
@@ -80,7 +80,7 @@ const Menu = ({referencia})=> {
                     )
                 })}
             </ul>
-            <button>Atendimento</button>
+            <Botao className="bt" href='https://wa.me/'>Atendimento</Botao>
         </Nav>
     )
 }
