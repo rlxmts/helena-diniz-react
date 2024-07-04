@@ -6,6 +6,9 @@ import { createGlobalStyle } from 'styled-components';
 
 const EstiloGlobal = createGlobalStyle`
 
+html{
+  scroll-behavior: smooth;
+}
 .app-recolhido{
     position:relative;
     left: -20vw;
