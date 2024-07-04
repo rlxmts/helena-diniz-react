@@ -173,10 +173,10 @@ const Contato = ()=> {
                             </ul>
                             <ul className="redes-sociais" data-aos="fade-left">
                                 <li>
-                                    <a href="https://" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                                    <a href='https://wa.me/351931662209' target="_blank" rel="noopener noreferrer">WhatsApp</a>
                                 </li>
                                 <li>
-                                    <a href="https://" target="_blank" rel="noopener noreferrer">Instagram</a>
+                                    <a href="https://www.instagram.com/hhelenadiniz/" target="_blank" rel="noopener noreferrer">Instagram</a>
                                 </li>
                                 <li>
                                     <a href="https://" target="_blank" rel="noopener noreferrer">E-mail</a>

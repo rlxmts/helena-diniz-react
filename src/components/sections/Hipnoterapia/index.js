@@ -145,7 +145,15 @@ const Hipnoterapia = () => {
                 <Chamada>
                     <Subtitulo data-aos="fade-up">Sessões semanais on-line ou presenciais com 1 hora de duração.</Subtitulo>
                     <Paragrafo data-aos="fade-up">Veja como você pode melhorar sua qualidade de vida e suas relações pessoais e profissionais.</Paragrafo>
-                    <Botao data-aos="fade-up">Agende Seu Atendimento</Botao>
+                    <Botao 
+                            data-aos="fade-up" 
+                            className="bt" 
+                            href='https://wa.me/351931662209'
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Agende seu Atendimento
+                        </Botao>
                 </Chamada>
             </Container>
         </Section>

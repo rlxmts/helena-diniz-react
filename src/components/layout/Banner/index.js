@@ -110,7 +110,15 @@ const Banner = ()=> {
                     <h1 data-aos="fade-up">Autoconhecimento e Autodesenvolvimento</h1>
                     <h2 data-aos="fade-up">Terapia Antroposófica, Transpessoal e Mindfulness</h2>
                     <Div>
-                        <Botao data-aos="fade-up" href="https://">Agende seu Atendimento</Botao>
+                        <Botao 
+                            data-aos="fade-up" 
+                            className="bt" 
+                            href='https://wa.me/351931662209'
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Agende seu Atendimento
+                        </Botao>
                         <span data-aos="fade-up">Presencial ou Online.</span>
                     </Div>
             </Container>

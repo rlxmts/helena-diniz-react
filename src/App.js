@@ -93,8 +93,7 @@ function App() {
       setClassBarrinha('');
       setBarrinhas('');
     }
-  }
-      
+  }    
 
   return (
     <ContainerApp className={classNames(classeApp)} ref={AppContainer} >
@@ -105,6 +104,7 @@ function App() {
         menu={menu}
         classes={ classNames('barrinhas', classBarrinha)}
         classesBotao={ classNames('container-barrinhas', barrinhas)}
+        aoClicarItemMenu={abrirOuFecharMenu}
       />
       <Banner />
       <Sobre />

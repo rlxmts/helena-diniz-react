@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Botao = styled.button`
+export const Botao = styled.a`
     background-color: #42707e;
     color: #FFF;
     text-transform: uppercase;

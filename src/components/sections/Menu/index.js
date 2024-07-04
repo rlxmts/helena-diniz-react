@@ -66,13 +66,13 @@ const paginas = [
 ];
 
 
-const Menu = ({referencia})=> {
+const Menu = ({referencia, aoClicar})=> {
     return(
         <Nav ref={referencia}>
             <ul className="lista">
                 {paginas.map( (item) => {
                     return(
-                        <li key={item.nome}>
+                        <li key={item.nome} onClick={aoClicar}>
                             <a href={item.link}>
                             {item.nome}
                             </a>
@@ -80,7 +80,14 @@ const Menu = ({referencia})=> {
                     )
                 })}
             </ul>
-            <Botao className="bt" href='https://wa.me/'>Atendimento</Botao>
+            <Botao 
+                className="bt" 
+                href='https://wa.me/351931662209'
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Atendimento
+            </Botao>
         </Nav>
     )
 }
