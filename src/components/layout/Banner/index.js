@@ -19,7 +19,7 @@ background: linear-gradient(180deg, rgba(255,239,239,1) 40%, rgba(255,255,255,0)
         align-items: start;
         justify-content: center;
         flex-direction: column;
-        background-image: url('./img/medica.webp');
+        background-image: url('./img/helena.webp');
         background-repeat: no-repeat;
         background-size: 500px;
         background-position-x: right;
@@ -52,8 +52,9 @@ background: linear-gradient(180deg, rgba(255,239,239,1) 40%, rgba(255,255,255,0)
 
       .fundo{
         padding: 2rem 2rem 3rem 2rem;
-        background-image: url('./img/helena.jpeg');
-        background-position-x: center;
+        background-image: url('./img/helena.webp');
+        background-size: contain;
+        background-position-x: right;
         background-position-y: top;
         justify-content: end;
       }
