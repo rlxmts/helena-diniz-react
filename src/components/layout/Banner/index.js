@@ -21,7 +21,7 @@ background: linear-gradient(180deg, rgba(255,239,239,1) 40%, rgba(255,255,255,0)
         flex-direction: column;
         background-image: url('./img/helena.webp');
         background-repeat: no-repeat;
-        background-size: 430px;
+        background-size: 530px;
         background-position-x: right;
         background-position-y: bottom;
         height:100%;
