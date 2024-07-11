@@ -14,7 +14,7 @@ const SecaoSobre = styled.section`
     background: linear-gradient(180deg, rgba(86,123,134,1) 50%, rgba(93,129,141,1) 100%);
     background: #ffbdbe;
     background: #7d0304;
-    background: #ffdbdb;
+    background: #ffefef;
 
     .sobre-container{
         display:flex;
