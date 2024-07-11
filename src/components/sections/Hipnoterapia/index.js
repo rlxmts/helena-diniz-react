@@ -68,6 +68,7 @@ const Chamada = styled.div`
     h3{
         text-align: center;
         max-width:100%;
+        margin: .5rem;
     }
 
     p{
@@ -101,43 +102,43 @@ const Hipnoterapia = () => {
                 </Subtitulo>
                 <CardsContainer>
                     <Card
-                        img='./img/sol.svg'
+                        img='./img/autoconhecimento.svg'
                         alt=''
                         titulo="Autoconhecimento"
                         subtitulo="Desenvolvimento e aprimoramento."
                         texto="É uma dinâmica terapêutica que promove a transformação e a elaboração de novas possibilidades para questões antigas, novas e obscuras do indivíduo, com o objetivo de ativar o processo de desenvolvimento saudável do Ser no caminho do seu aprimoramento pessoal."
                     />
                     <Card
-                        img='./img/sol.svg'
+                        img='./img/planta.svg'
                         alt=''
-                        titulo="Autoconhecimento"
-                        subtitulo="Desenvolvimento e aprimoramento."
-                        texto="É uma dinâmica terapêutica que promove a transformação e a elaboração de novas possibilidades para questões antigas, novas e obscuras do indivíduo, com o objetivo de ativar o processo de desenvolvimento saudável do Ser no caminho do seu aprimoramento pessoal."
+                        titulo="Redução do Estresse e Ansiedade"
+                        subtitulo="Encontre Paz Interior e Equilíbrio"
+                        texto="A hipnoterapia oferece técnicas eficazes para diminuir o estresse e a ansiedade, ajudando a criar um estado de calma e equilíbrio. Por meio de sessões focadas, é possível aprender a lidar melhor com os desafios do dia a dia, promovendo uma vida mais tranquila e harmoniosa."
                     />
                     <Card
-                        img='./img/sol.svg'
+                        img='./img/coracao.svg'
                         alt=''
-                        titulo="Autoconhecimento"
-                        subtitulo="Desenvolvimento e aprimoramento."
-                        texto="É uma dinâmica terapêutica que promove a transformação e a elaboração de novas possibilidades para questões antigas, novas e obscuras do indivíduo, com o objetivo de ativar o processo de desenvolvimento saudável do Ser no caminho do seu aprimoramento pessoal."
+                        titulo="Melhoria dos Relacionamentos"
+                        subtitulo="Fortaleça suas Conexões"
+                        texto="Ao trabalhar questões emocionais e padrões de comportamento, a hipnoterapia pode fortalecer a comunicação e a compreensão entre pessoas. Esse processo facilita a resolução de conflitos e a construção de relacionamentos mais saudáveis e gratificantes."
                     />
                     <Card
-                        img='./img/sol.svg'
+                        img='./img/escalar.svg'
                         alt=''
-                        titulo="Autoconhecimento"
-                        subtitulo="Desenvolvimento e aprimoramento."
-                        texto="É uma dinâmica terapêutica que promove a transformação e a elaboração de novas possibilidades para questões antigas, novas e obscuras do indivíduo, com o objetivo de ativar o processo de desenvolvimento saudável do Ser no caminho do seu aprimoramento pessoal."
+                        titulo="Superação de Traumas"
+                        subtitulo="Cure o Passado, Viva o Presente"
+                        texto="A hipnoterapia é uma ferramenta poderosa para acessar e tratar traumas profundamente enraizados. Com uma abordagem segura e compassiva, ajuda a liberar memórias dolorosas e promove a cura emocional, permitindo que o indivíduo avance com mais leveza e confiança."
                     />
                     <Card
-                        img='./img/sol.svg'
+                        img='./img/foguete.svg'
                         alt=''
-                        titulo="Autoconhecimento"
-                        subtitulo="Desenvolvimento e aprimoramento."
-                        texto="É uma dinâmica terapêutica que promove a transformação e a elaboração de novas possibilidades para questões antigas, novas e obscuras do indivíduo, com o objetivo de ativar o processo de desenvolvimento saudável do Ser no caminho do seu aprimoramento pessoal."
+                        titulo="Potencialização de Habilidades"
+                        subtitulo="Desbloqueie seu Máximo Potencial"
+                        texto="A hipnoterapia pode desbloquear o potencial latente, ajudando a desenvolver e aprimorar habilidades pessoais e profissionais. Ao reforçar a autoconfiança e a motivação, é possível alcançar novos patamares de desempenho e realização em diversas áreas da vida."
                     />
                 </CardsContainer>
                 <Chamada>
-                    <Subtitulo data-aos="fade-up">Sessões semanais on-line ou presenciais com 1 hora de duração.</Subtitulo>
+                    <Subtitulo data-aos="fade-up">Sessões semanais on-line com 1 hora de duração.</Subtitulo>
                     <Paragrafo data-aos="fade-up">Veja como você pode melhorar sua qualidade de vida e suas relações pessoais e profissionais.</Paragrafo>
                     <Botao 
                             data-aos="fade-up" 

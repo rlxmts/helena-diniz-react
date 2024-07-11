@@ -17,13 +17,9 @@ const CardContainer = styled.div`
     p{
         max-width: 850px;
     }
-
-    h3{
-       color: #000000 ;
-    }
-
-    h5{
-        color: #999999;
+        
+    h3,h5{
+        text-align: start;
     }
 
     @media screen and (max-width: 668px){
@@ -64,7 +60,7 @@ const Card = ({img, alt, titulo, subtitulo, texto}) => {
         <CardContainer  data-aos="fade-up">
             <CabecalhoCard>
                <img src={img} alt={alt}></img>
-                <div>
+                <div className="textos">
                     <Subtitulo>{titulo}</Subtitulo>
                     <h5>{subtitulo}</h5>
                 </div>

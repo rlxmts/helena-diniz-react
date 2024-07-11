@@ -83,12 +83,12 @@ const Testemunhos = () => {
             nome: 'Matheus Cruz'
         },
         {
-            depoimento: 'Obrigada, Dra Rebeca, pela empatia e todos atendimentos recebidos. Foram fundamentais, para o meu autoconhecimento e amadurecimento. Grata demais! Jamais esquecerei!!',
-            nome: 'Alessandra Anzelman'
+            depoimento: 'Ser atendida pela Helena foi um divisor de águas na minha vida,ela é muito atenciosa e paciente comigo,estou conseguindo me libertar de traumas da minha infância. Gratidão 🙏😊',
+            nome: 'Luciene Morais'
         },
         {
-            depoimento: 'Obrigada, Dra Rebeca, pela empatia e todos atendimentos recebidos. Foram fundamentais, para o meu autoconhecimento e amadurecimento. Grata demais! Jamais esquecerei!!',
-            nome: 'Kaique Pacheco'
+            depoimento: 'Maravilhosa tem sido maravilhoso pra minha vida refrigério pra minha alma!',
+            nome: 'Raiane Fidelis'
         }
     ]
 

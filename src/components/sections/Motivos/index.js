@@ -82,7 +82,7 @@ const Motivos = ()=> {
         <SecaoMotivo id="especialidades">
             <Container className="motivos-container">
                 <Subtitulo data-aos="fade-up">Para Quem É Essa Terapia?</Subtitulo>
-                <h4 data-aos="fade-up">A Terapia Breve Com Base Em Neurociência</h4>
+                <h4 data-aos="fade-up">A Hipnoterapia é uma prática terapêutica aprovada por profissionais da saúde</h4>
                 <Paragrafo data-aos="fade-up">É indicada quando já não há uma razão ou lógica aparente para a permanência do sofrimento. E neste momento você está diante de uma oportunidade de passar por uma terapia de caráter corretivo para queixas e sofrimentos específicos, principalmente quando já se tentou resolver de todas as maneiras usando a razão, tentando estratégias comportamentais, treinamentos cognitivos, que não funcionam. Quem sofre tem pressa!                
                 </Paragrafo>
                 <ul>

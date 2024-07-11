@@ -72,10 +72,10 @@ const Sobre = ()=> {
                 <div className="sobre-container">
                     <Titulo data-aos="fade-up">Olá! <br></br>Seja bem-vindo,<br></br>eu sou Helena Diniz.</Titulo>
                     <div>
-                        <Paragrafo data-aos="fade-up">Atuo como Terapeuta Antroposófica, Transpessoal, Aconselhadora Biográfica, e Instrutora de Mindfulness. Realizo atendimentos individuais ou em grupos, cursos diversos e vivências que contribuem com o desenvolvimento humano, o autoconhecimento e qualidade de vida. Minha proposta de trabalho é ajudar você a:</Paragrafo>
+                        <Paragrafo data-aos="fade-up">Como hipnoterapeuta, ofereço uma abordagem completa para promover o bem-estar e o crescimento pessoal. Trabalho com atendimentos individuais, além de ministrar cursos e vivências que facilitam o desenvolvimento humano, o autoconhecimento e a melhoria da qualidade de vida. Minha missão é auxiliar você a:</Paragrafo>
 
                         <ul>
-                            <li data-aos="fade-up">Ampliar a visão sobre si, seu momento e biografia.</li>
+                            <li data-aos="fade-up">Ampliar a visão sobre si e seu momento.</li>
                             <li data-aos="fade-up">Obter equilíbrio nas crises de relacionamento.</li>
                             <li data-aos="fade-up">Desenvolver autoconfiança frente aos acontecimentos da época.</li>
                             <li data-aos="fade-up">Reduzir o estresse e ansiedade do dia a dia.</li>

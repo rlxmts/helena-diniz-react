@@ -157,14 +157,14 @@ const Contato = ()=> {
                     <div className="container-contato">
                         <ContainerForm data-aos="fade-right">
                             <Paragrafo>
-                            Estou de portas e braços abertos para contribuir com o seu desenvolvimento e transformação por meio da terapia transpessoal, antroposófica e do processo biográfico. Agende sua sessão clicando nos botões espalhados pelo site ou, se preferir, utilize os campos abaixo ou o telefone.
+                            Estou de portas e braços abertos para contribuir com o seu desenvolvimento e transformação por meio da Hipnoterapia. Agende sua sessão clicando nos botões espalhados pelo site ou, se preferir, utilize os campos abaixo ou o telefone.
                             </Paragrafo>
                             <Formulario />
                         </ContainerForm>
                         <Informacoes>
                             <ul className="info-contato"  data-aos="fade-left">
-                                <li>Rua Jaboticabeiras, 156 - Santissímo / RJ
-                                    <span>(21) 99153-7608</span>
+                                <li>Contato@helenediniz.com
+                                    <span>+351 931 662 209 (Numero - Bélgica) </span>
                                 </li>
                                 <li>
                                     <h5>Horario de Atentimento:</h5>
