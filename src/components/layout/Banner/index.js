@@ -51,7 +51,7 @@ background: linear-gradient(180deg, rgba(255,239,239,1) 40%, rgba(255,255,255,0)
         height: 80vh;
 
       .fundo{
-        padding: 2rem 2rem 4rem 2rem;
+        padding: 2rem 2rem 3rem 2rem;
         background-image: url('./img/helena.jpeg');
         background-position-x: center;
         background-position-y: top;
@@ -65,7 +65,7 @@ background: linear-gradient(180deg, rgba(255,239,239,1) 40%, rgba(255,255,255,0)
         display:block;
         position: absolute;
         background: rgb(255,255,255);
-        background: linear-gradient(0deg, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 60%);
+        background: linear-gradient(0deg, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 70%);
         left:0;
         top:0;
       }
