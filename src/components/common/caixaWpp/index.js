@@ -30,6 +30,7 @@ const Div = styled.div`
             font-size: 1px;
             border-radius:50%;
             cursor:pointer;
+            color: transparent;
         }    
     }
 

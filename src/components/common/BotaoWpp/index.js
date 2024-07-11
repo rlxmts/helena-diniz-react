@@ -9,6 +9,7 @@ const Botao = styled.a`
     width: 50px;
     display:flex;
     font-size: 1px;
+    color: transparent;
     background-color: #43a737;
     border-radius: 50%;
     padding: 10px;
