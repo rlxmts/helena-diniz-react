@@ -17,13 +17,17 @@ const CardContainer = styled.div`
     p{
         max-width: 850px;
     }
-        
+
     h3,h5{
         text-align: start;
     }
 
     @media screen and (max-width: 668px){
         padding: 2rem;
+
+        h3,h5{
+            text-align: center;
+        }
     }
 `
 
