@@ -11,6 +11,7 @@ import { useEffect } from "react";
 const SecaoSobre = styled.section`
 
     background: #ffefef;
+    box-shadow: 0px 0px 10px #00000070;
 
     .sobre-container{
         display:flex;

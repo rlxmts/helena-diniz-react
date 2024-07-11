@@ -47,7 +47,7 @@ background: linear-gradient(180deg, rgba(255,239,239,1) 40%, rgba(255,255,255,0)
     }
 
     @media screen and (max-width: 668px){
-
+        padding-top: 5rem;
         height: 80vh;
 
       .fundo{
