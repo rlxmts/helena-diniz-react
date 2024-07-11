@@ -11,7 +11,6 @@ import { useEffect } from "react";
 
 const Section = styled.section`
 
-    background-color: #ffdbdb;
     background-color: #ffefef;
     color: #FFF;
 

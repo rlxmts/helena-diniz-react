@@ -10,10 +10,6 @@ import { useEffect } from "react";
 
 const SecaoSobre = styled.section`
 
-    background: rgb(86,123,134);
-    background: linear-gradient(180deg, rgba(86,123,134,1) 50%, rgba(93,129,141,1) 100%);
-    background: #ffbdbe;
-    background: #7d0304;
     background: #ffefef;
 
     .sobre-container{
