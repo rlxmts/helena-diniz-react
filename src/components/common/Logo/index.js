@@ -33,7 +33,6 @@ const LogoBox = styled.a`
 
     @media screen and (max-width: 668px){
 
-        padding-left:2rem;
         
         &::before{
         
