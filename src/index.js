@@ -58,6 +58,10 @@ html{
   font-family: "Playfair Display";
   font-weight: 300;
 }
+
+h1,h2, h3,h4{
+  color:#7d0304;
+}
 `
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

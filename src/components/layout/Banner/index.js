@@ -9,8 +9,10 @@ const Section = styled.section`
 
     height: 100vh;
     position: relative;
-    background: rgb(218,232,240);
-    background: linear-gradient(275deg, rgba(218,232,240,1) 50%, rgba(223,234,241,1) 100%);
+    // background: rgb(218,232,240);
+    // background: linear-gradient(275deg, rgba(218,232,240,1) 50%, rgba(223,234,241,1) 100%);
+    background: rgb(255,239,239);
+background: linear-gradient(180deg, rgba(255,239,239,1) 40%, rgba(255,255,255,0) 100%);
 
     .fundo{
         display: flex;
@@ -33,6 +35,7 @@ const Section = styled.section`
         font-weight: 300;
         max-width: 500px;
         color: #42707e;
+        color: #7d0304;
         line-height: 3rem;
     }
     
@@ -119,7 +122,7 @@ const Banner = ()=> {
                         >
                             Agende seu Atendimento
                         </Botao>
-                        <span data-aos="fade-up">Presencial ou Online.</span>
+                        <span data-aos="fade-up">Consultas Online.</span>
                     </Div>
             </Container>
         </Section>

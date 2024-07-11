@@ -18,6 +18,10 @@ const CardContainer = styled.div`
         max-width: 850px;
     }
 
+    h3{
+       color: #000000 ;
+    }
+
     h5{
         color: #999999;
     }

@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Botao = styled.a`
     background-color: #42707e;
+    background-color: #7d0304;
     color: #FFF;
     text-transform: uppercase;
     font-size: 12px;
@@ -23,6 +24,8 @@ export const Botao = styled.a`
     &:hover{
     background-color: #FFF;
     color:#42707e;
+    color:#7d0304;
     border: 1px solid #42707e;
+    border: 1px solid #7d0304;
     }
 `

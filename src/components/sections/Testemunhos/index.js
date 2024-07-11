@@ -4,7 +4,7 @@ import Depoimentos from "../../common/Depoimentos";
 import { useRef } from "react";
 
 const SecaoTestemunhos = styled.section`
-    background-color: #7d916a;
+    background-color: #7f181b;
     position:relative;
     overflow: hidden;
 

@@ -10,6 +10,7 @@ import { useEffect } from "react";
 
 const DivHistoria = styled.div`
      background-color: #dbdddd;
+     background-color: #fff;
 
      .titulo-mobile{
         display:none;
