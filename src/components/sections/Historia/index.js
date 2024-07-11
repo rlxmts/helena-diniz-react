@@ -18,9 +18,10 @@ const DivHistoria = styled.div`
 
      .historia-container{
         display: flex;
-        aling-items: center;
+        align-items: end;
         justify-content: center;
         gap: 2rem;
+        padding: 10rem 1.5rem 0 1.5rem;
 
         .historia-textos{
             width:100%;
@@ -28,10 +29,11 @@ const DivHistoria = styled.div`
             display:flex;
             flex-direction: column;
             justify-content: center;
+            padding-bottom: 3rem;
         }
 
         .historia-img{
-            max-width:230px;
+            max-width:300px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -50,6 +52,7 @@ const DivHistoria = styled.div`
 
         .historia-img{
             max-width:100% !important;
+            border-bottom: 1px solid #7d0304;
 
             img{
                 max-width:200px;
@@ -92,7 +95,7 @@ const Historia = () => {
                 </div>
                 <div className="historia-img" data-aos="fade-left">
                     <Subtitulo className="titulo-mobile">Dedico minha vida a ajudar as pessoas a se sentirem melhor e a crescerem pessoalmente.</Subtitulo>
-                    <img src="./img/medica-corpo.webp" alt="Doutora Helena Diniz terapeuta clinica"></img>
+                    <img src="./img/helena-sobre.webp" alt="Doutora Helena Diniz terapeuta clinica"></img>
                 </div>
             </Container>
         </DivHistoria>

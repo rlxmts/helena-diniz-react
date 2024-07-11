@@ -66,7 +66,7 @@ background: linear-gradient(180deg, rgba(255,239,239,1) 40%, rgba(255,255,255,0)
         display:block;
         position: absolute;
         background: rgb(255,255,255);
-        background: linear-gradient(0deg, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 70%);
+        background: linear-gradient(0deg, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 50%);
         left:0;
         top:0;
       }
