@@ -138,7 +138,7 @@ const Hipnoterapia = () => {
                     />
                 </CardsContainer>
                 <Chamada>
-                    <Subtitulo data-aos="fade-up">Sessões semanais on-line com 1 hora de duração.</Subtitulo>
+                    <Subtitulo data-aos="fade-up">Atendimento online.</Subtitulo>
                     <Paragrafo data-aos="fade-up">Veja como você pode melhorar sua qualidade de vida e suas relações pessoais e profissionais.</Paragrafo>
                     <Botao 
                             data-aos="fade-up" 

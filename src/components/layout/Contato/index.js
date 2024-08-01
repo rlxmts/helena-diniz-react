@@ -164,7 +164,7 @@ const Contato = ()=> {
                         <Informacoes>
                             <ul className="info-contato"  data-aos="fade-left">
                                 <li>Contato@helenediniz.com
-                                    <span>+351 931 662 209 (Numero - Bélgica) </span>
+                                    <span>+351 931 662 209 (Numero - Portugal) </span>
                                 </li>
                                 <li>
                                     <h5>Horario de Atentimento:</h5>

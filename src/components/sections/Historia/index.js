@@ -88,10 +88,10 @@ const Historia = () => {
         <DivHistoria>
             <Container className="historia-container">
                 <div className="historia-textos" data-aos="fade-right">
-                    <Subtitulo>Dedico minha vida a ajudar as pessoas a se sentirem melhor e a crescerem pessoalmente.</Subtitulo>
-                    <Paragrafo>Desde jovem, iniciei minha jornada profissional, sempre com o objetivo de evoluir e aprimorar minhas habilidades como terapeuta. Hoje, moro na Bélgica e me dedico diariamente a ser uma profissional melhor, com a missão de ajudar o máximo de pessoas possível e me tornar uma referência na área.</Paragrafo>
-                    <Paragrafo>Embora resida na Europa, meu compromisso é contribuir significativamente para a saúde e bem-estar de pessoas no Brasil e em Portugal. Através de consultas online, dedico-me a oferecer suporte terapêutico de alta qualidade, visando sempre a melhoria da qualidade de vida e o desenvolvimento pessoal de meus clientes.</Paragrafo>
-                    <Paragrafo>Convido você a embarcar em uma jornada de cura e transformação. Ao tratar o passado, podemos desbloquear o presente e abrir portas para um futuro cheio de possibilidades. Não deixe que antigas barreiras limitem seu potencial. Com minha ajuda, você pode superar obstáculos e conquistar grandes coisas. Tome a iniciativa hoje e permita-se viver a vida plena e realizadora que você merece.</Paragrafo>
+                    <Subtitulo>Bem-vinda ao meu espaço dedicado ao bem-estar e à transformação pessoal!</Subtitulo>
+                    <Paragrafo>Sou natural do Brasil e fazem oito anos que experimento a vida na Europa. Já visitei um total de nove países e morei em três, sendo sendo atualmente residente na  Bélgica. Conheci muitas culturas e historias. Se me perguntassem o que eu mais adoro fazer, com certeza eu diria colecionar historias.</Paragrafo>
+                    <Paragrafo>Essa vivencia me ensinou que nessa vida há mais felicidade em servir. E por muito tempo busquei superar os meus próprios desafios, as minhas questões internas e com certeza desapegar do passado. Queria lidar com a vida de maneira mais leve.</Paragrafo>
+                    <Paragrafo>Explorei diversas práticas e métodos seguros de tratamento. Estudei diversos livros, áudios, vídeos e cursos. Até que encontrei a hipnoterapia, minha verdadeira paixão, minha missão de vida. E como alguém que tinha sido muito servida, senti que era hora de retribuir, ajudando outros a viver a vida que procuram. </Paragrafo>
                 </div>
                 <div className="historia-img" data-aos="fade-left">
                     <Subtitulo className="titulo-mobile">Dedico minha vida a ajudar as pessoas a se sentirem melhor e a crescerem pessoalmente.</Subtitulo>

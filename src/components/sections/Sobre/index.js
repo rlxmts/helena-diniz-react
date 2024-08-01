@@ -73,14 +73,17 @@ const Sobre = ()=> {
                 <div className="sobre-container">
                     <Titulo data-aos="fade-up">Olá! <br></br>Seja bem-vindo,<br></br>eu sou Helena Diniz.</Titulo>
                     <div>
-                        <Paragrafo data-aos="fade-up">Como hipnoterapeuta, ofereço uma abordagem completa para promover o bem-estar e o crescimento pessoal. Trabalho com atendimentos individuais, além de ministrar cursos e vivências que facilitam o desenvolvimento humano, o autoconhecimento e a melhoria da qualidade de vida. Minha missão é auxiliar você a:</Paragrafo>
+                        <Paragrafo data-aos="fade-up">A hipnoterapia é uma técnica poderosa e comprovada, que pode ser a chave para resolver uma variedade de problemas. Minha missão é auxiliar você a:</Paragrafo>
 
                         <ul>
-                            <li data-aos="fade-up">Ampliar a visão sobre si e seu momento.</li>
-                            <li data-aos="fade-up">Obter equilíbrio nas crises de relacionamento.</li>
-                            <li data-aos="fade-up">Desenvolver autoconfiança frente aos acontecimentos da época.</li>
-                            <li data-aos="fade-up">Reduzir o estresse e ansiedade do dia a dia.</li>
-                            <li data-aos="fade-up">Despertar qualidades e potencialidades no caminho profissional.</li>
+                            <li data-aos="fade-up">Redução de Ansiedade e Estresse.</li>
+                            <li data-aos="fade-up">Técnicas para acalmar a mente e o corpo.</li>
+                            <li data-aos="fade-up">Estratégias para lidar com situações estressantes.</li>
+                            <li data-aos="fade-up">Processamento e liberação de traumas passados.</li>
+                            <li data-aos="fade-up">Aumento da Autoestima e Confiança.</li>
+                            <li data-aos="fade-up">Controle de comportamentos compulsivos.</li>
+                            <li data-aos="fade-up">Superação do medo de falar em público.</li>
+                            <span>E muito mais...</span>
                         </ul>
                         <Botao 
                             data-aos="fade-up" 

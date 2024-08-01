@@ -32,13 +32,13 @@ const CardContainer = styled.div`
 `
 
 const CabecalhoCard = styled.div`
-    display: flex;
+    display: flex; 
     align-items: center;
     gap: 2rem;
     margin: 0;
-    padding: 2rem 0 3rem 0;
-    border-bottom: 1px solid #DCDCDC;
-    margin-bottom: 2rem;
+    padding: 2rem 0;
+    border-bottom: 1px solid #DCDCDC; 
+    margin-bottom: 2rem; 
 
     h3{
         margin-bottom: 0;
