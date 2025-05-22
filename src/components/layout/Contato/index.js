@@ -55,7 +55,7 @@ const Informacoes = styled.div`
             font-size: 1px;
             color: transparent;
             background-color: #42707e;
-            background-color: #7d0304;
+            background-color: #756fb3;
             display:block;
             height: 40px;
             width:40px;

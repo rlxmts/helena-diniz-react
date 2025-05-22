@@ -11,7 +11,7 @@ import { useEffect } from "react";
 
 const Section = styled.section`
 
-    background-color: #ffefef;
+    background:rgba(244, 221, 255, 0.26);
     color: #FFF;
 
     .hipnoterapia-container{
@@ -33,7 +33,7 @@ const Section = styled.section`
         display: block;
         height: 3px;
         width: 50px;
-        background-color: #7d0304;
+        background-color: #756fb3;
         margin-top: .5rem;
     }
 
@@ -72,7 +72,7 @@ const Chamada = styled.div`
     }
 
     p{
-        color: #7d0304;
+        color:#756fb3;
         text-align: center;
         max-width: 100%;
     }

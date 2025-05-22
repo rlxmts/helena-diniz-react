@@ -52,7 +52,7 @@ const DivHistoria = styled.div`
 
         .historia-img{
             max-width:100% !important;
-            border-bottom: 1px solid #7d0304;
+            border-bottom: 1px solid #756fb3;
 
             img{
                 max-width:200px;
@@ -95,7 +95,7 @@ const Historia = () => {
                 </div>
                 <div className="historia-img" data-aos="fade-left">
                     <Subtitulo className="titulo-mobile">Dedico minha vida a ajudar as pessoas a se sentirem melhor e a crescerem pessoalmente.</Subtitulo>
-                    <img src="./img/helena-sobre.webp" alt="Doutora Helena Diniz terapeuta clinica"></img>
+                    <img src="./img/daniela.png" alt="Doutora Helena Diniz terapeuta clinica"></img>
                 </div>
             </Container>
         </DivHistoria>

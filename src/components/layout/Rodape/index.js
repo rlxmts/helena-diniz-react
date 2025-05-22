@@ -3,7 +3,7 @@ import { Container } from "../../common/Container";
 
 const SecaoRodape = styled.footer`
     background-color: #42707e;
-    background-color: #7d0304;
+    background-color: #756fb3;
     padding-top:2rem;
     .container-rodape{
         padding: 1rem;

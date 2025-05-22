@@ -60,7 +60,7 @@ html{
 }
 
 h1,h2, h3,h4{
-  color:#7d0304;
+  color:#756fb3;
 }
 `
 

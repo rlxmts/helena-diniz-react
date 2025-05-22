@@ -6,36 +6,33 @@ import 'aos/dist/aos.css';
 import { useEffect } from "react";
 
 const Section = styled.section`
-
-    height: 100vh;
     position: relative;
-    // background: rgb(218,232,240);
-    // background: linear-gradient(275deg, rgba(218,232,240,1) 50%, rgba(223,234,241,1) 100%);
-    background: rgb(255,239,239);
-background: linear-gradient(180deg, rgba(255,239,239,1) 40%, rgba(255,255,255,0) 100%);
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url('./img/banner2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center ;
+    height:100vh;
+    padding: 0 10%;
 
-    .fundo{
-        display: flex;
-        align-items: start;
-        justify-content: center;
-        flex-direction: column;
-        background-image: url('./img/helena.webp');
-        background-repeat: no-repeat;
-        background-size: 430px;
-        background-position-x: right;
-        background-position-y: bottom;
-        height:100%;
-        padding: 0 10%;
+    &::before{
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(88deg, rgba(255, 255, 255, 1) 20%, rgba(255, 212, 249, 0) 71%);
+    z-index: 1;
     }
 
-    h1,h2{position:realtive; z-index:1;}
+    h1,h2{position:relative; z-index:999;}
 
     h1{
         font-size: 3rem;
         font-weight: 300;
         max-width: 500px;
-        color: #42707e;
-        color: #7d0304;
+        color: #756fb3;
         line-height: 3rem;
     }
     
@@ -47,12 +44,13 @@ background: linear-gradient(180deg, rgba(255,239,239,1) 40%, rgba(255,255,255,0)
     }
 
     @media screen and (max-width: 668px){
-        padding-top: 5rem;
-        height: 80vh;
+        padding: 0;
+        justify-content: end;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
 
       .fundo{
-        padding: 2rem 2rem 3rem 2rem;
-        background-image: url('./img/helena.webp');
         background-size: contain;
         background-position-x: right;
         background-position-y: top;
@@ -65,8 +63,8 @@ background: linear-gradient(180deg, rgba(255,239,239,1) 40%, rgba(255,255,255,0)
         content: '';
         display:block;
         position: absolute;
-        background: rgb(255,255,255);
-        background: linear-gradient(0deg, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 50%);
+        background: rgb(239, 215, 255);
+        background: linear-gradient(45deg, rgb(255, 255, 255) 0%, rgba(255,255,255,0) 100%);
         left:0;
         top:0;
       }

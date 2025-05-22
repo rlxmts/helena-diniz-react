@@ -25,7 +25,7 @@ const LogoBox = styled.a`
         font-family: "Cormorant SC";
         font-weight: 300;
         // color: #42707e;
-        color: #7d0304;
+        color: #756fb3;
         font-size: 2rem;
 
         line-height: 1.3rem;
@@ -46,22 +46,9 @@ const LogoBox = styled.a`
         }
     }
 `
-
-const Span = styled.span`
-    display: block;
-    font-family: "Quicksand";
-    font-weight: 500;
-    // color: #42707e;
-    color: #7d0304;
-    font-size: .8rem;
-    margin: 3px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-
-
-    @media screen and (max-width: 668px){
-        font-size: .6rem;
-    }
+const LogoImg = styled.img`
+    width:100%;
+    max-width: 200px;
 `
 
 const Logo = ()=> {
@@ -72,8 +59,7 @@ const Logo = ()=> {
 
     return(
         <LogoBox onClick={subirAoTop}>
-                <h1>Helena Diniz</h1>
-                <Span>Hipnoterapeuta</Span>
+                <LogoImg src="./img/logodra.png" />
         </LogoBox>
     )
 }

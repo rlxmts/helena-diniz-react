@@ -10,7 +10,7 @@ import { useEffect } from "react";
 
 const SecaoSobre = styled.section`
 
-    background: #ffefef;
+    background:rgba(244, 221, 255, 0.26);
     box-shadow: 0px 0px 10px #00000070;
 
     .sobre-container{

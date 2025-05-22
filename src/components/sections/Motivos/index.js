@@ -22,7 +22,7 @@ const SecaoMotivo = styled.section`
     h4{
         font-size: 2.5rem;
         color: #42707e;
-        color: #7d0304;
+        color: #756fb3;
         margin-bottom: 2rem;
         text-align: center;
     }
@@ -43,7 +43,7 @@ const SecaoMotivo = styled.section`
 
     li{
         background-color: #42707e;
-        background-color: #7d0304;
+        background-color: #756fb3;
         color: #FFF;
         padding: 1rem;
         width: 170px;

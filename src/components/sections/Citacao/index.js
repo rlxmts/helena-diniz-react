@@ -34,7 +34,7 @@ const ContainerCitacao = styled.section`
     }
 
     .autor{
-        color:#7d0304;
+        color:#756fb3;
     }
 `
 
@@ -42,7 +42,7 @@ const Frase = styled.q`
     display: block;
     text-align: center;
     font-size: 2rem;
-    color: #7d0304;
+    color: #756fb3;
     font-style: italic;
     max-width: 800px;
 
