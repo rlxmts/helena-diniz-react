@@ -11,7 +11,7 @@ const Section = styled.section`
     align-items: start;
     justify-content: center;
     flex-direction: column;
-    background-image: url('./img/banner2.jpg');
+    background-image: url('img/banner2.jpg' );
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center ;
@@ -47,7 +47,7 @@ const Section = styled.section`
         padding: 0;
         justify-content: end;
         height: 100svh;
-        background-image: url('./img/bannerdani.jpg');
+        background-image: url('img/bannerdani.jpg');
         background-size: cover;
         background-position: center;
         &::before{

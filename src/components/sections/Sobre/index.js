@@ -30,15 +30,14 @@ const SecaoSobre = styled.section`
             text-align: end;
             font-size: 3rem;
             font-weight: 300;
-            align-self: flex-start;
+            align-self: center;
         }
 
         ul{
-            padding-left: 1.2rem;
-        }
+            list-style:none;
+            }
 
         ul li{
-            list-style-type: disc;
             margin-bottom: .5rem;
         }
     }
@@ -88,10 +87,10 @@ const Sobre = ()=> {
 
                             <Span className="fade-up">Você sente que:</Span>
                         <ul>
-                            <li data-aos="fade-up">Já tentou de tudo para emagrecer e nada funciona?</li>
-                            <li data-aos="fade-up">Vive estufado(a), com azia, gases ou intestino desregulado?</li>
-                            <li data-aos="fade-up">Come certos alimentos e passa mal, mas não sabe exatamente o que te faz mal?</li>
-                            <li data-aos="fade-up">Tem cansaço frequente, dores de cabeça ou até acne sem explicação?</li>                           
+                            <li data-aos="fade-up">- Já tentou de tudo para emagrecer e nada funciona?</li>
+                            <li data-aos="fade-up">- Vive estufado(a), com azia, gases ou intestino desregulado?</li>
+                            <li data-aos="fade-up">- Come certos alimentos e passa mal, mas não sabe exatamente o que te faz mal?</li>
+                            <li data-aos="fade-up">- Tem cansaço frequente, dores de cabeça ou até acne sem explicação?</li>                           
                             <span style={{fontFamily: 'Poppins', fontSize:'14px'}}>Muitos desses sintomas podem estar relacionados à saúde do seu intestino e ao funcionamento do seu metabolismo.</span>
                         </ul>
                         <Botao 
@@ -100,7 +99,7 @@ const Sobre = ()=> {
                             href='https://wa.me/351931662209'
                             target="_blank"
                             rel="noopener noreferrer"
-                            margin='0'
+                            margin='2rem 0'
                         >
                             Agende seu Atendimento
                         </Botao>
