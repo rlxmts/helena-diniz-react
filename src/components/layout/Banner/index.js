@@ -46,29 +46,17 @@ const Section = styled.section`
     @media screen and (max-width: 668px){
         padding: 0;
         justify-content: end;
-        height: 100vh;
+        height: 100svh;
+        background-image: url('./img/bannerdani.jpg');
         background-size: cover;
         background-position: center;
-
-      .fundo{
-        background-size: contain;
-        background-position-x: right;
-        background-position-y: top;
-        justify-content: end;
-      }
-
-      .fundo::after{
-        width:100%;
-        height:100%;
-        content: '';
-        display:block;
-        position: absolute;
-        background: rgb(239, 215, 255);
-        background: linear-gradient(45deg, rgb(255, 255, 255) 0%, rgba(255,255,255,0) 100%);
-        left:0;
-        top:0;
-      }
-
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(0deg, rgba(255, 255, 255, 1) 20%, rgba(255, 212, 249, 0) 71%);
+            z-index: 1;
+        }
       h1{
         font-size: 1.8rem;
         line-height: 2rem;
@@ -92,7 +80,7 @@ const Div = styled.div`
         margin-left: 1rem;
         font-family: "Poppins";
         font-size: .7rem;
-        color: #7d7e7f;
+        color:#7d7e7f; 
     }
 
 `
@@ -108,9 +96,9 @@ const Banner = ()=> {
 
     return(
         <Section id="inicio">
-            <Container className="fundo">
-                    <h1 data-aos="fade-up">Autoconhecimento e Autodesenvolvimento</h1>
-                    <h2 data-aos="fade-up">Descubra uma nova versão de si mesmo.</h2>
+            <Container mobilePadding="1rem 2rem" className="fundo">
+                    <h1 data-aos="fade-up">Especialista em Gastroenterologia e Clínica Médica</h1>
+                    <h2 data-aos="fade-up">Agende sua consulta com a Dra. Daniela</h2>
                     <Div>
                         <Botao 
                             data-aos="fade-up" 
@@ -121,7 +109,7 @@ const Banner = ()=> {
                         >
                             Agende seu Atendimento
                         </Botao>
-                        <span data-aos="fade-up">Consultas Online.</span>
+                        <span data-aos="fade-up">Atendimento online ou presencial</span>
                     </Div>
             </Container>
         </Section>

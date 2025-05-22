@@ -1,6 +1,6 @@
 import Banner from "./components/layout/Banner";
 import Cabecalho from "./components/layout/Cabecalho";
-import Hipnoterapia from "./components/sections/Hipnoterapia";
+// import Hipnoterapia from "./components/sections/Hipnoterapia";
 import Sobre from "./components/sections/Sobre";
 import Testemunhos from "./components/sections/Testemunhos";
 import Motivos from "./components/sections/Motivos";
@@ -108,7 +108,7 @@ function App() {
       />
       <Banner />
       <Sobre />
-      <Hipnoterapia />
+      {/* <Hipnoterapia /> */}
       <Motivos />
       <Testemunhos />
       <Citacao />

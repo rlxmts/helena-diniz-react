@@ -163,8 +163,8 @@ const Contato = ()=> {
                         </ContainerForm>
                         <Informacoes>
                             <ul className="info-contato"  data-aos="fade-left">
-                                <li>Contato@helenediniz.com
-                                    <span>+351 931 662 209 (Numero - Portugal) </span>
+                                <li>Contato@dradanielamilagra.com.br
+                                    <span>(21) 99999-9999 </span>
                                 </li>
                                 <li>
                                     <h5>Horario de Atentimento:</h5>
@@ -177,7 +177,7 @@ const Contato = ()=> {
                                     <a href='https://wa.me/351931662209' target="_blank" rel="noopener noreferrer">WhatsApp</a>
                                 </li>
                                 <li>
-                                    <a href="https://www.instagram.com/hhelenadiniz/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
                                 </li>
                                 <li>
                                     <a href="https://" target="_blank" rel="noopener noreferrer">E-mail</a>

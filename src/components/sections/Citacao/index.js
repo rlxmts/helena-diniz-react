@@ -18,7 +18,7 @@ const ContainerCitacao = styled.section`
         display: block;
         width: 100%;
         height: 100%;
-        background-color: #ffffffb8;
+        background-color:rgba(255, 255, 255, 0.72);
         position: absolute;
         top: 0;
         left: 0;
@@ -64,8 +64,8 @@ const Citacao = ()=> {
     return(
         <ContainerCitacao>
             <Container className="citacao-container">
-                <Frase  data-aos="fade-up">Não posso esperar que algo mude lá fora na vida social se eu mesmo não me puser em movimento.</Frase>
-                <span className="autor" data-aos="fade-up">- Rudolf Steiner, fundador da Antroposofia</span>
+                <Frase  data-aos="fade-up">Meu compromisso é investigar profundamente a causa dos seus sintomas, tratar com precisão e te ajudar a viver com mais leveza, energia e saúde real.</Frase>
+                <span className="autor" data-aos="fade-up"></span>
             </Container>
         </ContainerCitacao>
     )

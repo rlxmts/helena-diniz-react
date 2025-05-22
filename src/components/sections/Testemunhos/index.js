@@ -75,20 +75,16 @@ const Testemunhos = () => {
     const depoimentos = [
 
         {
-            depoimento: 'Obrigada, Dra Helena, pela empatia e todos atendimentos recebidos. Foram fundamentais, para o meu autoconhecimento e amadurecimento. Grata demais! Jamais esquecerei!!',
-            nome: 'Vanuza Amaral'
+            depoimento: 'Nunca imaginei que a intolerância alimentar estava por trás do meu cansaço e da minha ansiedade. Hoje tenho mais disposição do que nunca.',
+            nome: ''
         },
         {
-            depoimento: 'Nós só percebemos como é importante cuidar da nossa saúde mental quando damos o primeiro passo. Profissional incrível!',
-            nome: 'Matheus Cruz'
+            depoimento: 'Com a Dra. Daniela, eu consegui emagrecer 12kg de forma segura e sem passar fome. É outro nível de cuidado.',
+            nome: ''
         },
         {
-            depoimento: 'Ser atendida pela Helena foi um divisor de águas na minha vida,ela é muito atenciosa e paciente comigo,estou conseguindo me libertar de traumas da minha infância. Gratidão 🙏😊',
-            nome: 'Luciene Morais'
-        },
-        {
-            depoimento: 'Maravilhosa tem sido maravilhoso pra minha vida refrigério pra minha alma!',
-            nome: 'Raiane Fidelis'
+            depoimento: 'Ela é a primeira médica que realmente me escutou e olhou para meu caso por inteiro.',
+            nome: ''
         }
     ]
 

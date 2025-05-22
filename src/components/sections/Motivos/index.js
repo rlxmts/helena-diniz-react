@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import { Subtitulo } from "../../common/Subtitulo";
-import { Paragrafo } from "../../common/Paragrafo";
+// import { Paragrafo } from "../../common/Paragrafo";
 import { Container } from "../../common/Container";
 import Aos from "aos";
 import 'aos/dist/aos.css';
@@ -42,13 +42,16 @@ const SecaoMotivo = styled.section`
     }
 
     li{
-        background-color: #42707e;
         background-color: #756fb3;
         color: #FFF;
         padding: 1rem;
-        width: 170px;
+        width: 100%;
+        max-width: 400px;
         text-align: center;
         border-radius: 20px;
+        display:flex;
+        align-items: center;
+        justify-content:center;
     }
 
     @media screen and (max-width: 668px){
@@ -61,7 +64,7 @@ const SecaoMotivo = styled.section`
             gap:5px;
         }
         li{
-            width: 160px;
+            width:100%;
         }
     }
 `
@@ -76,15 +79,15 @@ const Motivos = ()=> {
         })
     },[])
    
-    const problemas = ['Vícios', 'Ansiedade', 'Depressão', 'Compulsões', 'Ciclo Repetitivos', 'Fobias'];
+    const problemas = ['Avaliação clínica detalhada', 'Exames específicos para intolerâncias alimentares e desequilíbrios gastrointestinais', 'Diagnóstico preciso de doenças digestivas e metabólicas', 'Estratégias seguras e eficazes para emagrecimento saudável', 'Acompanhamento com escuta ativa, empatia e foco em resultado'];
     
     return(
         <SecaoMotivo id="especialidades">
             <Container className="motivos-container">
-                <Subtitulo data-aos="fade-up">Para Quem É Essa Terapia?</Subtitulo>
-                <h4 data-aos="fade-up">A Hipnoterapia é uma prática terapêutica aprovada por profissionais da saúde</h4>
-                <Paragrafo data-aos="fade-up">É indicada quando já não há uma razão ou lógica aparente para a permanência do sofrimento. E neste momento você está diante de uma oportunidade de passar por uma terapia de caráter corretivo para queixas e sofrimentos específicos, principalmente quando já se tentou resolver de todas as maneiras usando a razão, tentando estratégias comportamentais, treinamentos cognitivos, que não funcionam. Quem sofre tem pressa!                
-                </Paragrafo>
+                <Subtitulo data-aos="fade-up">Como funciona o atendimento</Subtitulo>
+                <h4 data-aos="fade-up">Consulta médica focada em você. Não no seu sintoma.</h4>
+                {/* <Paragrafo data-aos="fade-up">É indicada quando já não há uma razão ou lógica aparente para a permanência do sofrimento. E neste momento você está diante de uma oportunidade de passar por uma terapia de caráter corretivo para queixas e sofrimentos específicos, principalmente quando já se tentou resolver de todas as maneiras usando a razão, tentando estratégias comportamentais, treinamentos cognitivos, que não funcionam. Quem sofre tem pressa!                
+                </Paragrafo> */}
                 <ul>
                     {problemas.map( (item)=> {
                         return(

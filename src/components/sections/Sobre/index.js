@@ -23,6 +23,7 @@ const SecaoSobre = styled.section`
             display: flex;
             flex-direction: column;
             gap: 2rem;
+            width:50%;
         }
 
         h2{
@@ -31,10 +32,6 @@ const SecaoSobre = styled.section`
             font-weight: 300;
             align-self: flex-start;
         }
-
-        // p,h2, li{
-        //     color: #FFF;
-        // }
 
         ul{
             padding-left: 1.2rem;
@@ -50,14 +47,27 @@ const SecaoSobre = styled.section`
 
         .sobre-container{
             flex-direction: column;
+            gap:1rem;
+            div{
+                width:100%;
+                text-aling: center;
+            }
+
+            div:nth-child(2) a{
+                margin: 1rem auto;
+            }
         }
 
         h2{
-            margin:0 auto;
             text-align:start !important;
             font-size: 2rem !important;
-        }
+        }            
     }
+`
+const Span = styled.span`
+ font-size: 20px;
+ font-weight: bold;
+ margin-bottom: -1rem;
 `
 const Sobre = ()=> {
 
@@ -71,19 +81,18 @@ const Sobre = ()=> {
         <SecaoSobre id="sobre">
             <Container>
                 <div className="sobre-container">
-                    <Titulo data-aos="fade-up">Olá! <br></br>Seja bem-vindo,<br></br>eu sou Helena Diniz.</Titulo>
+                    <Titulo data-aos="fade-up">Você sente que seu corpo está tentando te dizer algo?</Titulo>
                     <div>
-                        <Paragrafo data-aos="fade-up">A hipnoterapia é uma técnica poderosa e comprovada, que pode ser a chave para resolver uma variedade de problemas. Minha missão é auxiliar você a:</Paragrafo>
+                        <Paragrafo data-aos="fade-up">Desconfortos intestinais, dificuldade para emagrecer e reações alimentares não são normais — são sinais que precisam ser investigados.
+                        </Paragrafo>
 
+                            <Span className="fade-up">Você sente que:</Span>
                         <ul>
-                            <li data-aos="fade-up">Redução de Ansiedade e Estresse.</li>
-                            <li data-aos="fade-up">Técnicas para acalmar a mente e o corpo.</li>
-                            <li data-aos="fade-up">Estratégias para lidar com situações estressantes.</li>
-                            <li data-aos="fade-up">Processamento e liberação de traumas passados.</li>
-                            <li data-aos="fade-up">Aumento da Autoestima e Confiança.</li>
-                            <li data-aos="fade-up">Controle de comportamentos compulsivos.</li>
-                            <li data-aos="fade-up">Superação do medo de falar em público.</li>
-                            <span>E muito mais...</span>
+                            <li data-aos="fade-up">Já tentou de tudo para emagrecer e nada funciona?</li>
+                            <li data-aos="fade-up">Vive estufado(a), com azia, gases ou intestino desregulado?</li>
+                            <li data-aos="fade-up">Come certos alimentos e passa mal, mas não sabe exatamente o que te faz mal?</li>
+                            <li data-aos="fade-up">Tem cansaço frequente, dores de cabeça ou até acne sem explicação?</li>                           
+                            <span style={{fontFamily: 'Poppins', fontSize:'14px'}}>Muitos desses sintomas podem estar relacionados à saúde do seu intestino e ao funcionamento do seu metabolismo.</span>
                         </ul>
                         <Botao 
                             data-aos="fade-up" 
@@ -91,6 +100,7 @@ const Sobre = ()=> {
                             href='https://wa.me/351931662209'
                             target="_blank"
                             rel="noopener noreferrer"
+                            margin='0'
                         >
                             Agende seu Atendimento
                         </Botao>

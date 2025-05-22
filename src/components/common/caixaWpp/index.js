@@ -98,7 +98,7 @@ const CaixaWpp = ()=> {
                         </span>
                     </div>
                     <div className="info">
-                        <span className="nome">Helena Diniz</span>
+                        <span className="nome">Dra Daniela</span>
                         <span className="status">Disponivel</span>
                     </div>
                 </a>

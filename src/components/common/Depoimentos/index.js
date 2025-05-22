@@ -38,7 +38,7 @@ const Depoimentos = ({nome , depoimento})=> {
     return(
         <CardDepoimentos>            
             <q>{depoimento}</q>
-            <span className="barrinha"></span>
+            {/* <span className="barrinha"></span> */}
             <p>{nome}</p>
         </CardDepoimentos>
     )

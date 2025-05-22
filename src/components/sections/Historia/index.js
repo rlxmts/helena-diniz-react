@@ -30,10 +30,18 @@ const DivHistoria = styled.div`
             flex-direction: column;
             justify-content: center;
             padding-bottom: 3rem;
+
+            span{
+                font-family:"Poppins";
+                font-weight: bold;
+                font-size: 16px;
+                color: #7d7e7f;
+                margin-bottom: 2rem;
+            }
         }
 
         .historia-img{
-            max-width:300px;
+            max-width:400px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -55,7 +63,7 @@ const DivHistoria = styled.div`
             border-bottom: 1px solid #756fb3;
 
             img{
-                max-width:200px;
+                max-width:300px;
             }
         }
 
@@ -88,13 +96,14 @@ const Historia = () => {
         <DivHistoria>
             <Container className="historia-container">
                 <div className="historia-textos" data-aos="fade-right">
-                    <Subtitulo>Bem-vinda ao meu espaço dedicado ao bem-estar e à transformação pessoal!</Subtitulo>
-                    <Paragrafo>Sou natural do Brasil e fazem oito anos que experimento a vida na Europa. Já visitei um total de nove países e morei em três, sendo sendo atualmente residente na  Bélgica. Conheci muitas culturas e historias. Se me perguntassem o que eu mais adoro fazer, com certeza eu diria colecionar historias.</Paragrafo>
-                    <Paragrafo>Essa vivencia me ensinou que nessa vida há mais felicidade em servir. E por muito tempo busquei superar os meus próprios desafios, as minhas questões internas e com certeza desapegar do passado. Queria lidar com a vida de maneira mais leve.</Paragrafo>
-                    <Paragrafo>Explorei diversas práticas e métodos seguros de tratamento. Estudei diversos livros, áudios, vídeos e cursos. Até que encontrei a hipnoterapia, minha verdadeira paixão, minha missão de vida. E como alguém que tinha sido muito servida, senti que era hora de retribuir, ajudando outros a viver a vida que procuram. </Paragrafo>
+                    <Subtitulo marginBottom="0">Dra. Daniela Milagre</Subtitulo>
+                    <span>Médica especialista em Gastroenterologia e Clínica Médica</span>
+                    <Paragrafo>Com ampla experiência no diagnóstico e tratamento de distúrbios digestivos, metabólicos e de sobrepeso, a Dra. Daniela atua de forma integrada para oferecer soluções que vão além dos sintomas.</Paragrafo>
+                    <Paragrafo>Formada por [Universidade].</Paragrafo>
+                    <Paragrafo>Atualização constante em Medicina Digestiva, Doenças Funcionais, Intolerâncias Alimentares e Obesidade</Paragrafo>
                 </div>
                 <div className="historia-img" data-aos="fade-left">
-                    <Subtitulo className="titulo-mobile">Dedico minha vida a ajudar as pessoas a se sentirem melhor e a crescerem pessoalmente.</Subtitulo>
+                    <Subtitulo className="titulo-mobile">Dra. Daniela Milagre</Subtitulo>
                     <img src="./img/daniela.png" alt="Doutora Helena Diniz terapeuta clinica"></img>
                 </div>
             </Container>

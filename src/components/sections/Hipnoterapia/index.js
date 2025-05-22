@@ -147,7 +147,7 @@ const Hipnoterapia = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            Agende seu Atendimento
+                            Quero ser atendido pela Dra. Daniela
                         </Botao>
                 </Chamada>
             </Container>

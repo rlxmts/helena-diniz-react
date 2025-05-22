@@ -17,9 +17,9 @@ export const Botao = styled.a`
     max-width: 250px;
     text-align: center;
     cursor: pointer;
-    transition: .7s;
     border: 1px solid transparent;
-    margin: 1rem auto;
+    margin:${(props) => props.margin || '1rem auto'};
+    transition: .7s;
 
     &:hover{
     background-color: #FFF;
