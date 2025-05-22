@@ -56,6 +56,7 @@ const DivHistoria = styled.div`
         .historia-container{
             flex-direction: column-reverse;
             align-items: center;
+            padding: 5rem 1.5rem;
         }
 
         .historia-img{
@@ -94,7 +95,7 @@ const Historia = () => {
 
     return(
         <DivHistoria>
-            <Container className="historia-container">
+            <Container mobilePadding="5rem 1.5rem" className="historia-container">
                 <div className="historia-textos" data-aos="fade-right">
                     <Subtitulo marginBottom="0">Dra. Daniela Milagre</Subtitulo>
                     <span>Médica especialista em Gastroenterologia e Clínica Médica</span>
